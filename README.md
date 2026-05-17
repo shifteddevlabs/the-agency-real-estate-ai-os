@@ -65,16 +65,16 @@ Each specialist has four files: `identity.md`, `rules.md`, `examples.md`, `hando
 
 A real example, end to end:
 
-1. **Diana's assistant types:** "Just got a Zillow inquiry on the Bouldin listing, Sarah Jones, looking 60 days out, pre-approved up to $750k."
+1. **Diana's assistant types:** "Just got a Zillow inquiry on the Bouldin listing, Alex Chen, looking 60 days out, pre-approved up to $750k."
 2. **Orchestrator** sees "new inquiry" and routes to `01_lead_qualifier`, flags fair-housing risk as low, source reliability as medium.
 3. **Lead qualifier** runs intake, captures intent, budget, timeline, returns a clean lead summary plus a handoff packet.
 4. **Lead qualifier hands off** to `03_client_communication` with: "Warm lead, 60 days, send first-reply email in Diana's voice."
 5. **Client communication** drafts the email using Diana's voice profile.
 6. **Diana reviews, edits, sends.**
-7. **Two weeks later** Sarah signs a buyer rep. Diana types: "We're going to tour 1234 Main St Saturday."
+7. **Two weeks later** Alex signs a buyer rep. Diana types: "We're going to tour 1234 Main St Saturday."
 8. **Orchestrator** routes to `02_property_research`.
 9. **Property research** pulls comps, schools, permit history from approved sources, returns a tour briefing with source confidence labels.
-10. **Sarah's offer is accepted.** Diana types: "Sarah's contract executed today, $735k, 30-day close."
+10. **Alex's offer is accepted.** Diana types: "Alex's contract executed today, $735k, 30-day close."
 11. **Orchestrator** routes to `04_transaction_coordinator`.
 12. **Transaction coordinator** sets up the Texas timeline (option period, financing, appraisal, close), tracks deadlines, drafts vendor outreach when needed, hands client updates back to `03_client_communication`.
 
@@ -205,7 +205,7 @@ The orchestrator is both the router and the first compliance screen. That matter
 
 Austin-specific source packs, more transaction checklist templates, a Spanish-language parallel for the Austin market, and a scored mock test report showing handoff quality before live team use.
 
-Full design rationale: [`DESIGN-NOTES.md`](DESIGN-NOTES.md). Sample end-to-end run: [`SAMPLE-RUN.md`](SAMPLE-RUN.md).
+Full design rationale: [`DESIGN-NOTES.md`](DESIGN-NOTES.md). Six end-to-end scenarios (new lead, seller, returning client, inspection crisis, wire fraud attempt, broken handoff): [`SCENARIOS/`](SCENARIOS/). Real estate glossary for non-realtors: [`GLOSSARY.md`](GLOSSARY.md). Stranger test of the system: [`STRANGER-TEST.md`](STRANGER-TEST.md). Handoff contract reference: [`CONTRACTS.md`](CONTRACTS.md). Known failure modes and recovery: [`FAILURE-MODES.md`](FAILURE-MODES.md). FAQ: [`FAQ.md`](FAQ.md).
 
 ---
 
