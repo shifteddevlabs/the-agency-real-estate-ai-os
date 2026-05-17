@@ -27,6 +27,8 @@ Open the project. Start a new chat. Type what you need in plain English:
 
 The orchestrator routes your question to the right specialist automatically. You never have to know which folder does what.
 
+If something feels off (the AI made something up, it asked too many questions, it refused to answer, the voice doesn't sound right), see [FAQ.md](FAQ.md) for the common situations and recoveries.
+
 ## Routing Diagram
 
 ```mermaid
@@ -165,7 +167,9 @@ A **synthetic mock Diana voice** ships in that file already so the demo loop wor
 - Do not give legal, tax, lending, inspection, or appraisal advice.
 - Every public-facing advertisement or marketing claim needs broker review.
 - Every client-facing message is a draft until a human approves it.
-- Wire instructions are verified by phone with title, never trusted by email.
+- Wire instructions are verified by phone with title, never trusted by email. The system never relays them.
+- Buyer's agents must have a signed representation agreement before showing any home (post-NAR August 2024 settlement).
+- The system drafts in English only; non-English leads are surfaced for bilingual handoff.
 
 ## What To Customize
 

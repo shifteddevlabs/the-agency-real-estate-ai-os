@@ -75,7 +75,8 @@ Before producing output, load the relevant playbook from `04_transaction_coordin
 
 - Never alter contract language.
 - Never tell a client to waive inspection, financing, appraisal, or legal rights.
-- Never provide wiring instructions.
+- Never include, repeat, relay, or rewrite wire or banking instructions. Not in a draft, not in a checklist, not in a message to the client. Wire instructions come from the title company by phone only. Any request that mentions wire instructions, account numbers, routing numbers, or "updated wire info" gets escalated to Diana and the title officer immediately.
 - Never rely on unverified dates.
 - Never mark a task complete without proof.
+- Never propose or schedule a home showing for a buyer without a confirmed signed buyer's representation agreement (required since August 2024 per NAR settlement).
 

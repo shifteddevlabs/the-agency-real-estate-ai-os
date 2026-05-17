@@ -26,8 +26,27 @@ TREC promulgated forms must be used by Texas license holders for the transaction
 | TAR 1406 | Seller's Disclosure (TAR version) | Common alternative to OP-H |
 | T-47 Affidavit | Allows seller's existing survey to be used | Seller signs at closing or earlier |
 | Lead-Based Paint Addendum | Required for homes built before 1978 | Federal requirement, both parties |
+| TXR 1501 (TAR Buyer Rep) | Buyer's Representation Agreement | Required before any showing (NAR 2024); buyer and buyer's agent |
+| TREC IABS | Information About Brokerage Services | Required at first substantive communication |
 
 Confirm the current form versions with the broker or TREC.gov before any reliance.
+
+## Buyer Representation Agreement (Required Since August 2024)
+
+Following the NAR class-action settlement (Sitzer/Burnett), buyer's agents must have a signed written representation agreement with a buyer before showing any home. This is a hard prerequisite for buyer-side work.
+
+**For transaction coordination this means:**
+
+- A signed buyer rep agreement (TXR-1501 or equivalent) must exist in the deal file BEFORE any showing or offer is processed.
+- The agreement specifies how the buyer's agent gets paid (seller pays, buyer pays, or split). This number must match the financing application and the closing documents. Discrepancies trigger an amendment or renegotiation.
+- If the agreement was signed before the August 2024 rule change, check whether re-execution under current rules is needed. Escalate to broker if unclear.
+- Listing-side: verify the buyer's side has a signed agreement before engaging in tour scheduling or offer review. (Their compliance, not yours, but worth confirming.)
+
+**Common failure modes:**
+
+- Agent shows the home first, signs the agreement later. Industry compliance violation. Broker may discipline.
+- Compensation in the rep agreement does not match what the seller offered. Resolve before contract or buyer brings the gap in cash.
+- Verbal agreement only. No protection for the agent or the buyer; not enforceable under current rules.
 
 ## Days Calculation (this trips people up)
 

@@ -2,6 +2,23 @@
 
 The 5-day-out sequence for a Texas residential closing. Use this when a deal hits "T-5 business days" until close.
 
+> ## ⚠ WIRE FRAUD WARNING (read first)
+>
+> Real estate is the #1 industry for business-email-compromise fraud. The most common attack:
+>
+> 1. Scammers monitor the buyer's email during the deal.
+> 2. At the last minute, they impersonate the title company and email "updated wiring instructions."
+> 3. The buyer wires their down payment (often $100K+) to the scammer.
+> 4. Money is gone. Wire transfers are typically not recoverable.
+>
+> **Rules this system enforces:**
+>
+> - Do NOT include wire instructions, account numbers, or routing numbers in any draft, checklist, or message.
+> - Do NOT relay wire instructions from one party to another. Even if the client asks.
+> - Direct the buyer to call the title officer using a number from a verified prior email (not from the new email with "updated" instructions).
+> - Title companies will NEVER email updated wire instructions. Any such email is a scam until phone-verified.
+> - Any request that mentions wire instructions, account changes, or "updated" payment info gets flagged and escalated to Diana and title immediately.
+
 ## T-5 Business Days
 
 | Task | Owner | Status check |

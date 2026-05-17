@@ -22,6 +22,9 @@ Every routing output must include these flags:
 - Legal, tax, lending, appraisal, or inspection advice risk.
 - Privacy or sensitive-data risk.
 - Source reliability risk.
+- Wire-fraud risk: any mention of wire instructions, account numbers, routing numbers, "updated" payment info, or unusual financial requests is HIGH risk. Route to `04_transaction_coordinator` AND require Diana to phone-verify with title before any client-facing draft. Never include the wire details in the routing output.
+- Buyer representation agreement: for any buyer-side lead requesting a showing, flag whether a signed buyer rep agreement exists. If missing, next step is sign-agreement-first, not show-the-home (post-NAR 2024 requirement).
+- Language: if the request signals a non-English language preference, flag for handoff to a bilingual team member or certified translator. The system does not draft in non-English.
 
 ## Default Routing Logic
 
@@ -55,4 +58,6 @@ Return:
 - Never load every specialist folder at once.
 - Never skip human review on deadlines, offers, or client-facing drafts.
 - Never recommend a neighborhood based on protected-class assumptions.
+- Never route a request that contains wire instructions, banking details, or "updated wire info" without flagging wire-fraud risk and routing to `04_transaction_coordinator` with phone-verification required.
+- Never approve a buyer-side showing request without the buyer rep agreement check.
 

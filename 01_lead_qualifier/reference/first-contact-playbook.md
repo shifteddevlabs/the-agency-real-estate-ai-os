@@ -55,6 +55,7 @@ Capture only what is needed for the next step.
 
 - Name.
 - Best contact method.
+- Preferred language: English / Spanish / other.
 - Source or channel.
 - Lead type: buyer, seller, renter, investor, referral, open house, portal inquiry, nurture.
 - Current agent relationship.
@@ -73,6 +74,7 @@ Capture only what is needed for the next step.
 - Deal breakers.
 - Tour readiness.
 - Preferred appointment windows.
+- **Buyer representation agreement status: signed / in-progress / not started.** Required before any home showing (NAR 2024 settlement, see section below).
 
 ### Sellers
 
@@ -359,6 +361,47 @@ Use this format when routing the lead to another owner.
 - Property Research: use for addresses, property facts, client-defined criteria, market context, and objective comparison questions.
 - Transaction Coordinator: use only after representation, appointment, contract, or transaction status has been verified by a human.
 - Orchestrator: use when ownership is unclear, the request mixes departments, or compliance risk is high.
+
+## Buyer Representation Agreement (Post-NAR 2024)
+
+The NAR class-action settlement (Sitzer/Burnett, effective August 2024) changed how buyer's agents engage with leads.
+
+**Two new requirements:**
+
+1. Buyer's agents must have a signed written representation agreement with a buyer BEFORE showing any home. Even one home. No exceptions.
+2. Buyer commission is now negotiated directly with the buyer (the seller no longer assumes the buyer-agent commission by default).
+
+**How this changes lead qualification:**
+
+- Capture buyer rep agreement status during intake. Do NOT skip this field for buyer leads.
+- If a buyer has not signed a rep agreement with Diana's team, the recommended next action is a buyer consult to discuss representation and sign the agreement, NOT a home showing.
+- If a buyer has signed a rep agreement with another agent, mark the lead `Unqualified` for now. Note for re-engagement after that representation ends.
+- If a buyer asks for a showing before any agreement is in place, explain plainly: "Before we tour homes together, we need to sign a buyer representation agreement that explains how my services work and how I get paid. It usually takes 15 minutes. Want me to set up a quick consult this week?"
+
+**In Texas:**
+
+- The most common form is TXR-1501 (TAR Residential Buyer/Tenant Representation Agreement).
+- TREC IABS (Information About Brokerage Services) form is required at first substantive communication.
+- Terms vary: exclusive vs. non-exclusive, duration, geographic scope, compensation structure.
+
+**Edge cases:**
+
+- Open house attendees: the open house itself does not require individual buyer rep. But any follow-up showing of any property does.
+- Cooperating buyers (showing Diana's listing to a buyer represented by another agent): the other agent's representation agreement is their compliance, not ours. Verify it exists, then proceed.
+- Buyer rep signed before NAR rules changed: check whether re-execution is needed. Escalate to broker if unclear.
+
+## Language Handling
+
+The Agency drafts in English only. Austin metro is roughly 33% Hispanic, and Spanish-speaking leads enter the pipeline regularly.
+
+**For non-English-preferring leads:**
+
+1. Capture the language preference at intake (added to "All Leads" required fields).
+2. Surface a handoff flag for Diana: "This lead requested [language]. Route to [Diana's bilingual team member if any] or arrange a certified translator for written materials."
+3. Do NOT generate non-English client communication from this system. Translation of real estate documents has legal weight beyond what an AI should produce unsupervised.
+4. For verbal conversations, Diana's team can use a bilingual team member or a phone-based interpreter service.
+
+The system does not block these leads; it surfaces them so the right human can take the next step. If Diana's team is monolingual, this is a referral-out scenario, not a workflow-blocker.
 
 ## Compliance Guardrails
 

@@ -69,6 +69,18 @@ Thresholds:
 
 Any public advertisement, listing copy, social post, mailer, website text, or mass email needs broker review.
 
+## Closing-Week Wire-Fraud Warning
+
+Any client-facing message during closing week (final walkthrough, day-of-close, closing-related logistics) must include a wire-fraud warning paragraph. Use this template, adapted to context:
+
+> Reminder: the title company will NEVER email you updated wire instructions. If you receive any wire instructions, call [Title Officer Name] at [Phone Number] using the number from our prior verified emails, not a number in a new email. Scammers impersonate title companies at the last minute and the loss is usually unrecoverable.
+
+Do not draft wire instructions yourself. Do not repeat them from another message. Names and phone numbers in the warning must come from a verified prior message in the deal file. If those are not available, leave them as `[verify with Diana]` placeholders and flag the draft as `Needs Diana review`.
+
+## Language
+
+This system drafts in English only. If the handoff packet flags a Spanish-speaking lead or another non-English language preference, surface a note that the draft should be reviewed by a bilingual team member or certified translator before sending. Do not auto-translate. Real estate communications have legal weight, and translation should be done by a qualified bilingual human, not an AI.
+
 ## Output Format
 
 ```md
@@ -93,3 +105,5 @@ Any public advertisement, listing copy, social post, mailer, website text, or ma
 - Never promise price, timing, appraisal, loan approval, repair outcome, or legal result.
 - Never include protected-class preferences or steering language.
 - Never pressure a client to waive protections or deadlines.
+- Never include, repeat, or relay wire or banking instructions. Direct the client to call title by phone using a verified number.
+- Never auto-translate to or from another language. Surface the language preference and route to a bilingual reviewer.
