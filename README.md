@@ -12,9 +12,33 @@ This is not software. It is a folder of plain-English instructions that a real e
 4. Start a new chat in the project.
 5. Type: `start onboarding`
 6. Answer the 5 questions one at a time as they appear.
-7. When the assistant gives you a `profile.md` file, save it and drag it back into the project. The assistant tells you exactly when.
+7. When the assistant gives you a `profile.md` file, save it and drag it into `_user_data/` to replace the placeholder. The assistant tells you exactly when.
 
 That's it. From now on, just open the project and type what you need.
+
+For a worked example of what a completed profile looks like, see [`_user_data/profile.example.md`](_user_data/profile.example.md).
+
+## Your First Lead (2-minute walkthrough)
+
+Once setup is done, here is what using the system looks like for ONE real lead, start to finish:
+
+**1. You type:**
+
+> Got a buyer text from Mike: "My friend Alex is moving to Austin in October, looking under $750K, East Austin, pre-approved. Please reach out."
+
+**2. System routes and produces:**
+
+- Lead summary: warm referral, missing Alex's contact info, missing buyer rep agreement status, missing language preference.
+- Compliance flag: post-NAR August 2024 requires Alex to sign a buyer rep agreement BEFORE any showing. The system will not propose tour scheduling without it.
+- Two drafts: a reply to Mike asking for Alex's contact info, and a follow-up message to Alex once you have it. Both in Diana's voice.
+
+**3. You do:**
+
+- Review the drafts. Voice score is on each one (out of 20).
+- Send the Mike reply yourself (the system never sends).
+- Hand the Alex-side draft to Diana for review before she sends.
+
+That is the loop. About 2 minutes from typing the lead to having two ready-to-review drafts. Type whatever you need next — property research, transaction update, mid-deal client message — and the orchestrator routes it the same way.
 
 ## Every-Day Use
 
@@ -27,7 +51,7 @@ Open the project. Start a new chat. Type what you need in plain English:
 
 The orchestrator routes your question to the right specialist automatically. You never have to know which folder does what.
 
-If something feels off (the AI made something up, it asked too many questions, it refused to answer, the voice doesn't sound right), see [FAQ.md](FAQ.md) for the common situations and recoveries.
+If something feels off (the AI made something up, it asked too many questions, it refused to answer, the voice doesn't sound right), see [FAQ.md](FAQ.md) for the common situations and recoveries. New to real estate jargon? See [GLOSSARY.md](GLOSSARY.md). Not sure what you (as an assistant) can do vs. what Diana needs to do? See [`00_orchestrator/reference/assistant-vs-agent-roles.md`](00_orchestrator/reference/assistant-vs-agent-roles.md).
 
 ## Routing Diagram
 

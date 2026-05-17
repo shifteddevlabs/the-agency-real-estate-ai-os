@@ -77,15 +77,15 @@ The system was updated after this transcript was captured. Specific changes:
 1. **Name collision fixed.** The README's "Typical Flow" example was renamed from "Sarah Jones" to "Alex Chen." A team member running the test with a real Sarah Jones lead will no longer get confused.
 2. **Glossary added.** [`GLOSSARY.md`](GLOSSARY.md) at repo root, defining TREC, IABS, MLS, NAR, TXR-1501, EMD, CD, CMA, DOM, POA, HOA, and ~15 other terms. Linked from README.
 
-## Open Items For v1.1 (deferred)
+## v1.1 Items (addressed)
 
-These findings are real but not addressed in v1 — documented here for the next iteration:
+All five v1.1 items have been implemented:
 
-1. **README front-door density.** The 5-minute setup is at the top, but the rest of the README runs long before a stranger sees the "Every-Day Use" examples. A 20-line "your first lead in 5 minutes" cheat-sheet above the diagram would help. Will land in v1.1.
-2. **Assistant vs. agent role clarity.** The playbook is written for the licensed agent. A new `00_orchestrator/reference/assistant-vs-agent-roles.md` would explicitly enumerate which actions an unlicensed assistant can do vs. which must route to Diana. Will land in v1.1.
-3. **Sample completed profile.md.** Currently `_user_data/profile.md` is a placeholder. A `_user_data/profile.example.md` showing what a finished one looks like would close the "what does done look like" gap. Will land in v1.1.
-4. **Compliance flags destination.** The orchestrator outputs compliance flags but the README doesn't say what the user does with them. Brief addition: "Read them, copy any that say `Needs broker review` into your deal-file note for that matter, otherwise they're advisory." Will land in v1.1.
-5. **"Referrer didn't share contact" script.** The first-contact playbook assumes the referrer either gives contact info OR is asked for it. The middle case ("she's expecting your call" with no number) needs a specific script. Will land in v1.1.
+1. **README front-door density** — **DONE.** Added a "Your First Lead (2-minute walkthrough)" cheat-sheet between the 5-Minute Setup and Every-Day Use sections. Shows one concrete request → routing → drafts → human review loop end-to-end in under 20 lines.
+2. **Assistant vs. agent role clarity** — **DONE.** New file [`00_orchestrator/reference/assistant-vs-agent-roles.md`](00_orchestrator/reference/assistant-vs-agent-roles.md) enumerates what an unlicensed assistant can do, what must route to Diana, and how the system reflects this. Linked from README's Every-Day Use section.
+3. **Sample completed profile.md** — **DONE.** Created [`_user_data/profile.md`](_user_data/profile.md) (placeholder that triggers onboarding) and [`_user_data/profile.example.md`](_user_data/profile.example.md) (synthetic worked example showing every field populated). Orchestrator updated to check for the placeholder and gate work on it.
+4. **Compliance flags destination** — **DONE.** Added "What The User Does With Compliance Flags" section to [`00_orchestrator/rules.md`](00_orchestrator/rules.md) explaining how to act on each severity level.
+5. **"Referrer didn't share contact" script** — **DONE.** New "Sub-case: Referrer didn't share contact info" added to the Referral Text section of [`01_lead_qualifier/reference/first-contact-playbook.md`](01_lead_qualifier/reference/first-contact-playbook.md). Includes the reply script, the reasoning, and handoff hints when blocked.
 
 ## What This Test Proves
 

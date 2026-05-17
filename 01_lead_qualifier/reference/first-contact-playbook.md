@@ -198,6 +198,27 @@ Handoff hints:
 - Note whether permission to contact was explicit, implied, or unclear.
 - If permission is unclear, keep outreach minimal and route for human review.
 
+#### Sub-case: Referrer didn't share contact info
+
+Common pattern: the referrer says something like "she's expecting your call" or "go ahead and reach out" without actually providing the lead's phone or email.
+
+Use this reply to the referral source:
+
+> Thanks, happy to help. Quick blocker — I don't have [Lead First Name]'s number or email on this thread. Could you forward me their contact info, or send them my info so they can reach me first? Either works. I just want to make sure the intro is clean on their end too.
+
+Why this matters:
+
+- A cold call from an unrecognized number is a much worse first impression than a text or email warmed up by the referrer.
+- "She's expecting your call" is friendly but operationally incomplete. The referrer usually meant to share the info and forgot.
+- Reaching out without the referred lead knowing the referrer shared their info can feel intrusive and may technically violate consent norms.
+
+Handoff hints when contact info is still missing:
+
+- Mark intake status as `Blocked on contact info from referrer`.
+- Do NOT search public sources, people-search tools, or social media for the lead's contact info — that's lead enrichment outside the consent boundary.
+- Wait for the referrer's response, then proceed with the standard referral-lead flow.
+- If the referrer doesn't respond within 24 hours, send one polite follow-up text, then defer to Diana.
+
 ### Open House Follow-Up
 
 Use after an open house sign-in, conversation note, or post-event follow-up.
