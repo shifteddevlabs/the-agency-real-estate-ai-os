@@ -4,6 +4,24 @@ An AI operating system for Diana's 4-person boutique real estate team in Austin.
 
 This is not software. It is a folder of plain-English instructions that a real estate team drops into an AI workspace (Claude, ChatGPT, or Gemini), then uses by typing requests in everyday language. Five specialists, one front door, clear handoffs at every step, human review before anything leaves the system.
 
+## Use This Today
+
+If this folder is already installed in your AI project, and you only use ChatGPT and do not want to think about folders:
+
+1. Open the Agency project.
+2. Start a new chat.
+3. Paste the real lead, property question, draft request, or transaction update.
+
+The first thing to type can be as simple as:
+
+```text
+Use The Agency. Help me with this:
+
+[paste the real client note, lead text, property question, or deal update]
+```
+
+The assistant should route the request, flag anything risky, and give you the next draft or next question. You do not need to open specialist folders during normal use. The folders are there so the AI has rules to follow.
+
 ## 5-Minute Setup (do this once)
 
 1. Open [Claude.ai](https://claude.ai), [ChatGPT](https://chat.openai.com), or [Gemini](https://gemini.google.com) in your browser.
@@ -12,11 +30,13 @@ This is not software. It is a folder of plain-English instructions that a real e
 4. Start a new chat in the project.
 5. Type: `start onboarding`
 6. Answer the 5 questions one at a time as they appear.
-7. When the assistant gives you a `profile.md` file, save it and drag it into `_user_data/` to replace the placeholder. The assistant tells you exactly when.
+7. When the assistant gives you a `profile.md` file, save it into `_user_data/`. That private file is ignored by Git. The assistant tells you exactly when.
 
 That's it. From now on, just open the project and type what you need.
 
-For a worked example of what a completed profile looks like, see [`_user_data/profile.example.md`](_user_data/profile.example.md).
+You are ready when the assistant stops asking for onboarding and can help you draft a test lead. You only touch files during setup or when updating team preferences later.
+
+For a worked example of what a completed profile looks like, see [`_user_data/profile.example.md`](_user_data/profile.example.md). For the blank shape, see [`_user_data/profile.template.md`](_user_data/profile.template.md).
 
 ## Your First Lead (2-minute walkthrough)
 
@@ -38,7 +58,7 @@ Once setup is done, here is what using the system looks like for ONE real lead, 
 - Send the Mike reply yourself (the system never sends).
 - Hand the Alex-side draft to Diana for review before she sends.
 
-That is the loop. About 2 minutes from typing the lead to having two ready-to-review drafts. Type whatever you need next — property research, transaction update, mid-deal client message — and the orchestrator routes it the same way.
+That is the loop. About 2 minutes from typing the lead to having two ready-to-review drafts. Type whatever you need next, property research, transaction update, mid-deal client message, and the orchestrator routes it the same way.
 
 ## Every-Day Use
 
@@ -51,7 +71,58 @@ Open the project. Start a new chat. Type what you need in plain English:
 
 The orchestrator routes your question to the right specialist automatically. You never have to know which folder does what.
 
-If something feels off (the AI made something up, it asked too many questions, it refused to answer, the voice doesn't sound right), see [FAQ.md](FAQ.md) for the common situations and recoveries. New to real estate jargon? See [GLOSSARY.md](GLOSSARY.md). Not sure what you (as an assistant) can do vs. what Diana needs to do? See [`00_orchestrator/reference/assistant-vs-agent-roles.md`](00_orchestrator/reference/assistant-vs-agent-roles.md).
+If something feels off (the AI made something up, it asked too many questions, it refused to answer, the voice doesn't sound right), ask the orchestrator to recover and name the issue. New to real estate jargon, or not sure what an unlicensed assistant can do? The optional support references are in `reference/`.
+
+## Stuck?
+
+Use one of these recovery prompts:
+
+- `I'm stuck. What's the cleanest next step?`
+- `Wrong route. Re-route this and explain why.`
+- `Draft now using what we have, and mark any gaps.`
+- `The voice is off. Make it warmer, shorter, and more like Diana.`
+- `Check this packet before I rely on it.`
+
+The system is a workflow, not a sender. You still review everything before it goes to a client.
+
+## Power User Fast Path
+
+If you already use Claude or ChatGPT for MLS exports, CRM notes, transaction docs, and client emails, paste dense context and ask for the exact output you need.
+
+**Lead intake**
+
+```text
+Use The Agency. Start with the orchestrator, then qualify this lead.
+
+Lead/source notes:
+[paste portal lead, referral note, CRM note, or call recap]
+
+Return: lead summary, missing blockers, buyer-rep/listing-agreement status, compliance flags, and next client draft if safe.
+```
+
+**Property research**
+
+```text
+Use The Agency. Start with the orchestrator, then property research.
+
+MLS/export/source notes:
+[paste listing facts, MLS notes, county info, showing notes, or source links]
+
+Return: source-backed facts only, stale or missing data, what cannot be claimed, and a communication handoff if a client reply is needed.
+```
+
+**Transaction status**
+
+```text
+Use The Agency. Start with the orchestrator, then transaction coordinator.
+
+Deal status:
+[paste executed-date notes, option period, financing, appraisal, title, inspection, or closing updates]
+
+Return: verified deadline checklist, blockers, escalation owner, client-safe update draft request, and what not to say yet.
+```
+
+For multi-chat work, keep a simple matter log using [`reference/matter-log-template.md`](reference/matter-log-template.md). For copied MLS, CRM, deadline, and draft inputs, use [`reference/import-export-templates.md`](reference/import-export-templates.md). Before relying on an output, ask the assistant to run the [`reference/packet-validation-checklist.md`](reference/packet-validation-checklist.md).
 
 ## Routing Diagram
 
@@ -229,11 +300,11 @@ The orchestrator is both the router and the first compliance screen. That matter
 
 Austin-specific source packs, more transaction checklist templates, a Spanish-language parallel for the Austin market, and a scored mock test report showing handoff quality before live team use.
 
-Full design rationale: [`DESIGN-NOTES.md`](DESIGN-NOTES.md). Six end-to-end scenarios (new lead, seller, returning client, inspection crisis, wire fraud attempt, broken handoff): [`SCENARIOS/`](SCENARIOS/). Real estate glossary for non-realtors: [`GLOSSARY.md`](GLOSSARY.md). Stranger test of the system: [`STRANGER-TEST.md`](STRANGER-TEST.md). Handoff contract reference: [`CONTRACTS.md`](CONTRACTS.md). Known failure modes and recovery: [`FAILURE-MODES.md`](FAILURE-MODES.md). FAQ: [`FAQ.md`](FAQ.md).
+Optional reviewer evidence and deeper references live in [`reference/`](reference/). They are not required for first use.
 
 ---
 
-## Power User: Direct Prompts
+## Backup Direct Prompts
 
 If you prefer to paste prompts manually instead of using the drag-and-drop setup above, use these. Skip this section if you ran "start onboarding" above.
 
@@ -254,7 +325,7 @@ The AI should:
 
 1. Decide which specialist owns the next step.
 2. Create a handoff packet.
-3. Tell you which folder to open next.
+3. Tell you which specialist owns the next step.
 4. Tell you what not to do yet.
 
 ### Specialist Continuation Prompt

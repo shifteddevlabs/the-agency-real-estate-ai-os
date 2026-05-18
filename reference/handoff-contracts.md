@@ -2,7 +2,7 @@
 
 The brief said the handoff protocol is the test of this week. This document formalizes it. Every handoff direction has required fields, forbidden fields, and explicit rejection conditions.
 
-A receiver specialist that gets a packet missing required fields returns it to the orchestrator with a rejection note. This is demonstrated in [`SCENARIOS/06-broken-handoff.md`](SCENARIOS/06-broken-handoff.md).
+A receiver specialist that gets a packet missing required fields returns it to the orchestrator with a rejection note. This is demonstrated in [`scenarios/06-broken-handoff.md`](scenarios/06-broken-handoff.md).
 
 ## Universal Required Fields
 
@@ -194,7 +194,7 @@ Across all handoffs, packets must NEVER contain:
 
 ## Minimum Packet vs Full Packet
 
-The full schema in [`README.md`](README.md) (Handoff Packet section) lists ~15 fields. Use the full schema for:
+The full schema in [`../README.md`](../README.md) (Handoff Packet section) lists ~15 fields. Use the full schema for:
 
 - Compliance-sensitive handoffs (any wire-fraud, fair-housing, advertising, or representation issue).
 - Stage transitions (intake → research → draft, or research → transaction).
@@ -209,10 +209,10 @@ When in doubt, use the full packet. The extra fields cost nothing if not used; t
 
 ## Audit Trail
 
-Because every packet has a Matter ID and Stage, a deal's history can be reconstructed by chaining packets in order. This is intentional. A future v2 could persist packets as JSON files for audit/replay, but v1 keeps them in-chat for the human-paste model documented in [`DESIGN-NOTES.md`](DESIGN-NOTES.md).
+Because every packet has a Matter ID and Stage, a deal's history can be reconstructed by chaining packets in order. This is intentional. A future v2 could persist packets as JSON files for audit/replay, but v1 keeps them in-chat for the human-paste model documented in [`design-notes.md`](design-notes.md).
 
 ## Related
 
-- [`SCENARIOS/06-broken-handoff.md`](SCENARIOS/06-broken-handoff.md) — worked example of a rejection.
-- [`FAILURE-MODES.md`](FAILURE-MODES.md) — catalog of what goes wrong and how the system recovers.
+- [`scenarios/06-broken-handoff.md`](scenarios/06-broken-handoff.md) — worked example of a rejection.
+- [`failure-modes.md`](failure-modes.md) — catalog of what goes wrong and how the system recovers.
 - Each specialist's `handoff.md` — what THAT specialist receives and produces.

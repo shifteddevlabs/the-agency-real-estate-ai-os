@@ -25,4 +25,4 @@ Each scenario follows the same shape:
 4. **Final Output** — what reaches the team member or client.
 5. **What This Demonstrates** — which architecture principles this scenario exercises.
 
-The handoff packets in these scenarios are reference examples. Real packets may include fewer fields (use the minimum schema in `CONTRACTS.md`) or more (for compliance-sensitive handoffs).
+The handoff packets in these scenarios are reference examples. Real packets may include fewer fields (use the minimum schema in `../handoff-contracts.md`) or more (for compliance-sensitive handoffs).

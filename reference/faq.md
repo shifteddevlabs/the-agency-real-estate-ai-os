@@ -12,6 +12,14 @@ The system checks `_user_data/profile.md` for your team info. Until you replace 
 
 Yes for daily use. No for setup. Claude, ChatGPT, and Gemini all have mobile apps that work with Projects. Drag-and-drop folder upload usually requires a desktop browser, so do the 5-minute setup on a laptop. After that, the mobile app sees the same project and you can type requests from anywhere.
 
+### Do I need to open folders during normal use?
+
+No. In normal use, open the AI project and type the request. The folders are the instruction library the AI reads behind the scenes. You only need to open folders if you are setting up the system, tuning the rules, or doing a manual recovery.
+
+### How do I know setup worked?
+
+Setup worked when the assistant stops asking for onboarding and can handle a test lead. Try: "Use The Agency. Help me qualify a buyer lead who wants East Austin under 800k." If it routes, flags risks, and asks only useful missing questions, you are ready.
+
 ### It asked me 6 questions when I just wanted a draft. Can I skip that?
 
 Yes. Either:
@@ -21,7 +29,7 @@ Yes. Either:
 
 ### How do I redo a draft if the voice is off?
 
-Say "rewrite. The voice is off. Make it [sharper / warmer / shorter / more formal]." The specialist re-drafts using your feedback. If the voice is consistently wrong, that means the synthetic Diana voice is still in place — run `setup/voice-onboarding.md` to replace it with the real Diana profile.
+Say "rewrite. The voice is off. Make it [sharper / warmer / shorter / more formal]." The specialist re-drafts using your feedback. If the voice is consistently wrong, that means the synthetic Diana voice is still in place. Run `setup/voice-onboarding.md` to replace it with the real Diana profile.
 
 ## Routing and Handoffs
 
@@ -35,14 +43,18 @@ Yes. Type the specialist name first: "Use `02_property_research/`. Research 1234
 
 ### The handoff packet has 15 fields. Do I have to fill them all?
 
-No. The minimum required fields are:
+You usually do not fill the packet by hand. Ask the assistant to create it.
+
+For real handoffs between specialists, the minimum schema is the same as [`handoff-contracts.md`](handoff-contracts.md): the eight universal header fields plus the four required section headers. Compliance-sensitive work should use the full packet.
+
+If you are only giving a quick human note before the assistant creates the packet, include at least:
 
 - `Matter ID`
 - `Stage`
 - `Next Owner`
 - `Blocking` missing information
 
-Everything else is helpful but optional for routing. Use the full schema for compliance-sensitive handoffs (offers, listings, public marketing) and the minimum for fast internal routing.
+The assistant should expand that into the complete handoff packet before another specialist relies on it.
 
 ## Compliance and Refusals
 
@@ -92,6 +104,8 @@ That's fine. Re-paste the prior answer or summary into the chat: "Client is aski
 
 The system has no persistent memory across chats by default. Treat each chat as a clean slate and feed it the context it needs.
 
+For active leads or deals, keep a simple matter log using [`matter-log-template.md`](matter-log-template.md). Paste that log at the top of a new chat so the system can pick up without guessing.
+
 ## Edge Cases
 
 ### My deal involves new construction.
@@ -100,7 +114,7 @@ The Texas TREC checklist (in `04_transaction_coordinator/reference/`) explicitly
 
 ### My client is from out of state and can't attend closing.
 
-Power-of-attorney (POA) is needed. Set up POA paperwork at T-7 business days minimum (per the closing-week checklist). The POA must be signed in advance, notarized, and approved by both title and the lender. Some lenders don't allow POA at all — confirm early.
+Power-of-attorney (POA) is needed. Set up POA paperwork at T-7 business days minimum (per the closing-week checklist). The POA must be signed in advance, notarized, and approved by both title and the lender. Some lenders don't allow POA at all, confirm early.
 
 ### My client wants to back out after the option period ended.
 
@@ -123,4 +137,4 @@ The system surfaces escalation flags automatically, but use your judgment too. E
 
 ## Still Stuck?
 
-Tell the system: "I'm stuck on [problem]. What's the cleanest next step?" The orchestrator will route to the right specialist and surface what's needed to unblock you. If it still feels stuck, ping Diana directly — the system is a workflow, not a replacement for a human in the loop.
+Tell the system: "I'm stuck on [problem]. What's the cleanest next step?" The orchestrator will route to the right specialist and surface what's needed to unblock you. If it still feels stuck, ping Diana directly. The system is a workflow, not a replacement for a human in the loop.

@@ -130,4 +130,4 @@ Which way do you want to go?
 
 The brief said handoff protocols are THE test of this week. Many systems "define" handoffs but never actually enforce them — a specialist will just do the work even if the packet is incomplete. The Agency's specialists refuse incomplete packets and route back through the orchestrator. That's the difference between a documented contract and a real one.
 
-See `CONTRACTS.md` at the repo root for the full list of required fields per handoff direction.
+See `../handoff-contracts.md` for the full list of required fields per handoff direction.

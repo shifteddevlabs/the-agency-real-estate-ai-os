@@ -1,6 +1,6 @@
 # Examples
 
-Use these as plug-and-play first-contact patterns. Keep replies short, useful, and compliant. The lead qualifier does not send messages directly unless Diana asks. It prepares the intake summary and hands the draft request to `03_client_communication/`.
+Use these as plug-and-play first-contact patterns. The lead qualifier does not send messages directly. It produces the lead summary, missing information, next action, and a complete handoff packet.
 
 ## Example 1, Website Buyer Form
 
@@ -28,21 +28,22 @@ Warm
 
 ## Missing Information
 - Blocking:
-  - Financing or pre-approval status.
   - Current agent relationship.
+  - Buyer representation agreement status.
+  - Preferred contact method.
 - Helpful:
+  - Financing or pre-approval status.
   - Exact move date.
   - Property type, bedrooms, parking, outdoor space.
-  - Preferred communication channel.
 - Can wait:
-  - Showing availability.
+  - Showing windows.
 
 ## Recommended Next Action
-Ask three questions and offer a 15-minute buyer consult.
+Ask three useful questions and offer a buyer consult, not a showing.
 
 ## Suggested Follow-Up Questions
-1. Are you already pre-approved or still choosing a lender?
-2. Are you currently working with another agent?
+1. Are you already working with an agent?
+2. Are you already pre-approved or still choosing a lender?
 3. What are your must-haves besides staying within that price range?
 
 ## Handoff Packet
@@ -55,15 +56,53 @@ Matter: Buyer relocation inquiry
 Urgency: Medium
 Current status: Warm lead, needs qualification reply
 
+## Known Facts
+- Lead wants to buy in Austin this summer.
+- Budget comfort is 700k to 800k.
+- Downtown commute and character home are important.
+
+## Missing Information
+- Blocking:
+  - Current agent relationship.
+  - Buyer representation agreement status.
+  - Preferred contact method.
+- Helpful:
+  - Financing status.
+  - Must-haves and deal breakers.
+- Can wait:
+  - Showing windows.
+
 ## Compliance Flags
-- Fair housing: low, keep location discussion objective and client-led.
-- Legal, tax, lending, or inspection advice: medium, financing questions go to lender.
-- Privacy or sensitive data: low, do not add personal details beyond intake needs.
+- Fair housing: low, keep area discussion objective and client-led.
+- Advertising or broker-review: low, one-to-one reply.
+- Legal, tax, lending, appraisal, or inspection advice: medium, financing goes to lender.
+- Privacy or sensitive data: low, no extra enrichment.
+- Source reliability: medium, form details need confirmation.
+- Wire fraud: not applicable.
+- Buyer rep agreement: required before showing any home.
+- Language: unknown, ask if needed.
+
+## Source And Proof State
+- Source of truth: pasted website form.
+- Source checked at: current chat.
+- Needs recheck before: any showing or property recommendation.
+- Proof available: form text.
+- Proof missing: representation and financing status.
+
+## Requested Output
+Draft a short first reply that asks the three qualification questions and offers a buyer consult.
+
+## Next Owner
+`03_client_communication`
 
 ## Human Review
 - Reviewer needed: Diana or assigned agent.
 - Review reason: first client-facing reply.
-- Cannot proceed until: Diana approves message tone and call-to-action.
+- Cannot proceed until: draft avoids showing language unless buyer rep status is confirmed.
+
+## Human Review Needed Before
+- sending to a client
+- proposing a showing
 ```
 
 ## Example 2, Portal Inquiry
@@ -83,19 +122,25 @@ Buyer lead asking about a specific property and a possible weekend showing.
 ## Lead Temperature
 Hot if reachable and unrepresented, otherwise Warm.
 
+## Known Facts
+- Source: portal-style inquiry.
+- Lead asked about 4812 Sample Bend.
+- Lead asked about seeing it this weekend.
+
 ## Missing Information
 - Blocking:
   - Current agent relationship.
+  - Buyer representation agreement status.
   - Current property status from approved source.
-  - Financing or pre-approval status if a showing is requested.
 - Helpful:
+  - Financing or pre-approval status.
   - Preferred showing windows.
   - Main criteria beyond this property.
 - Can wait:
   - Full buyer consult details.
 
 ## Recommended Next Action
-Route property status to `02_property_research/`, then ask `03_client_communication/` for a short reply that does not promise availability until verified.
+Route property status to `02_property_research/`, then ask `03_client_communication/` for a short reply that does not promise availability.
 
 ## Handoff Packet
 From: `01_lead_qualifier`
@@ -104,153 +149,59 @@ Matter ID: `MOCK-PORTAL-001`
 Stage: Property status and showing triage
 Client or lead: Portal buyer lead
 Matter: Availability question for 4812 Sample Bend
-Urgency: High, weekend showing request
-Current status: Lead not yet qualified
+Urgency: High
+Current status: Lead not yet qualified, status unverified
+
+## Known Facts
+- Buyer asked whether 4812 Sample Bend is available.
+- Buyer asked about a weekend showing.
+
+## Missing Information
+- Blocking:
+  - Current listing status.
+  - Buyer representation agreement status.
+  - Current agent relationship.
+- Helpful:
+  - Financing status.
+  - Preferred showing windows.
+- Can wait:
+  - Full criteria.
 
 ## Compliance Flags
-- Source reliability: high, listing status is volatile.
-- Privacy or sensitive data: low.
+- Fair housing: low.
 - Advertising or broker-review: low, one-to-one reply.
+- Legal, tax, lending, appraisal, or inspection advice: low.
+- Privacy or sensitive data: low.
+- Source reliability: high, listing status is volatile.
+- Wire fraud: not applicable.
+- Buyer rep agreement: required before showing.
+- Language: unknown.
+
+## Source And Proof State
+- Source of truth: approved team listing source, not checked.
+- Source checked at: not checked.
+- Needs recheck before: any availability statement or showing discussion.
+- Proof available: portal message.
+- Proof missing: live status and representation status.
+
+## Requested Output
+Verify what sources are needed, identify what can be said safely, and prepare a caveated handoff to communication.
+
+## Next Owner
+`02_property_research`
 
 ## Human Review
 - Reviewer needed: Diana or assigned agent.
 - Review reason: property availability and showing guidance.
-- Cannot proceed until: status is checked or reply clearly says status is being verified.
+- Cannot proceed until: status is checked or the reply clearly says the team is checking it.
+
+## Human Review Needed Before
+- sending to a client
+- proposing a showing
+- relying on listing status
 ```
 
-## Example 3, Referral Text
-
-Input:
-
-```text
-Past client texted: "My friend Morgan may sell in the fall. Can I connect you?"
-```
-
-Output:
-
-```md
-## Lead Summary
-Potential seller referral from a past client. Relationship context matters.
-
-## Lead Temperature
-Warm
-
-## Missing Information
-- Blocking:
-  - Permission for introduction.
-- Helpful:
-  - Property address.
-  - Desired sale timing.
-  - What Morgan wants help with: pricing, prep, timing, or process.
-- Can wait:
-  - Condition details and motivation.
-
-## Recommended Next Action
-Ask for permission to be introduced and keep the first message warm, not salesy.
-
-## Suggested Follow-Up
-"Absolutely, happy to help. If Morgan is comfortable, feel free to connect us by text or email and I can start with a simple conversation about timing and prep."
-```
-
-## Example 4, Open House Follow-Up
-
-Input:
-
-```text
-Open house note: "Taylor came through with partner. Liked the backyard, worried about traffic. No lender yet. Wants to stay under 650k."
-```
-
-Output:
-
-```md
-## Lead Summary
-Buyer lead from open house. Budget and one concern known. Financing not started.
-
-## Lead Temperature
-Warm
-
-## Missing Information
-- Blocking:
-  - Current agent relationship.
-  - Permission to follow up by text or email if not already captured.
-- Helpful:
-  - Timeline.
-  - Lender/pre-approval plan.
-  - Must-haves beyond yard and budget.
-- Can wait:
-  - Specific neighborhood preferences.
-
-## Recommended Next Action
-Send a short follow-up that references the backyard and traffic concern, then asks whether they want help comparing options under 650k.
-```
-
-## Example 5, Seller Inquiry
-
-Input:
-
-```text
-Email: "We may sell our house in South Austin this fall. Curious what we should do before listing."
-```
-
-Output:
-
-```md
-## Lead Summary
-Potential seller planning for fall. Needs listing prep guidance and likely property research.
-
-## Lead Temperature
-Warm
-
-## Missing Information
-- Blocking:
-  - Property address.
-  - Decision-maker status.
-- Helpful:
-  - Desired sale month.
-  - Current condition and recent updates.
-  - Occupancy status.
-- Can wait:
-  - Full pricing strategy.
-
-## Recommended Next Action
-Ask for the address and offer a prep-focused walkthrough. Route to `02_property_research/` once address is available.
-```
-
-## Example 6, Just Browsing
-
-Input:
-
-```text
-DM: "Honestly just browsing right now, maybe buying next year."
-```
-
-Output:
-
-```md
-## Lead Summary
-Early-stage buyer. Not ready for active search, but could be nurtured.
-
-## Lead Temperature
-Nurture
-
-## Missing Information
-- Blocking:
-  - Current agent relationship before giving tailored search support.
-- Helpful:
-  - General price comfort.
-  - Desired timeline.
-  - What they want to learn first.
-- Can wait:
-  - Detailed criteria.
-
-## Recommended Next Action
-Send a no-pressure reply that offers a simple planning conversation or market orientation.
-
-## Suggested Follow-Up
-"Totally fine. If next year is the target, the useful thing now is getting oriented so you are not rushed later. I can help you understand budget, timing, and what to watch without turning it into an active search yet."
-```
-
-## Example 7, Already Represented
+## Example 3, Already Represented
 
 Input:
 
@@ -265,16 +216,75 @@ Output:
 Lead is already represented. Do not provide property advice or interfere with the agency relationship.
 
 ## Lead Temperature
-Unqualified unless representation ends or their agent consents.
+Unqualified unless representation ends or a human confirms contact is appropriate.
+
+## Known Facts
+- Lead says they have an agent.
+- Lead is asking for Diana's take on a specific house.
+
+## Missing Information
+- Blocking:
+  - Whether the question can be answered as general public information.
+  - Whether Diana or broker approves a response.
+- Helpful:
+  - Whether they want future contact after current representation ends.
+- Can wait:
+  - Property details.
 
 ## Recommended Next Action
-Send a respectful boundary reply.
+Route to `03_client_communication/` for a respectful boundary reply.
 
-## Suggested Follow-Up
-"Thanks for reaching out. Since you are already working with an agent, the right move is to ask them for guidance on that property. If your situation changes in the future, I would be happy to talk then."
+## Handoff Packet
+From: `01_lead_qualifier`
+To: `03_client_communication`
+Matter ID: `MOCK-REPRESENTED-001`
+Stage: Boundary reply
+Client or lead: Already represented lead
+Matter: Property advice request from represented buyer
+Urgency: Medium
+Current status: Unqualified for property advice
+
+## Known Facts
+- Lead is already represented.
+- They asked for a take on a house.
+
+## Missing Information
+- Blocking:
+  - Human approval for any response beyond a boundary note.
+- Helpful:
+  - Whether they want future contact after representation ends.
+- Can wait:
+  - Property facts.
 
 ## Compliance Flags
-- Agency relationship: high, do not advise on the property.
+- Fair housing: low.
 - Advertising or broker-review: low.
+- Legal, tax, lending, appraisal, or inspection advice: medium, do not advise on property.
 - Privacy or sensitive data: low.
+- Source reliability: not applicable.
+- Wire fraud: not applicable.
+- Buyer rep agreement: already represented elsewhere, do not interfere.
+- Language: unknown.
+
+## Source And Proof State
+- Source of truth: lead's own message.
+- Source checked at: current chat.
+- Needs recheck before: any re-engagement.
+- Proof available: representation statement.
+- Proof missing: permission for future contact.
+
+## Requested Output
+Draft a short boundary reply that directs the lead back to their agent and leaves the door open only if their situation changes.
+
+## Next Owner
+`03_client_communication`
+
+## Human Review
+- Reviewer needed: Diana or broker if unsure.
+- Review reason: existing agency relationship.
+- Cannot proceed until: the response avoids advice, strategy, or interference.
+
+## Human Review Needed Before
+- sending to a client
+- commenting on a property
 ```

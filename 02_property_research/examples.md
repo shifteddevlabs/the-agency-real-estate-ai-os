@@ -21,7 +21,7 @@ Should Diana prioritize this property for Jordan's weekend tour list?
 ## Property Snapshot
 - Address: 4812 Sample Bend, synthetic.
 - Status: stale note says active, but current status must be verified.
-- Client criteria: 3 bedrooms, 750k to 825k, outdoor space for dog, manageable commute to downtown.
+- Client criteria: 3 bedrooms, 750k to 825k, outdoor space, manageable commute to downtown.
 
 ## Facts, Signals, Questions
 - Fact: A three-day-old internal note says active. Source: mock listing note, checked three days ago.
@@ -35,26 +35,39 @@ Should Diana prioritize this property for Jordan's weekend tour list?
 - Tour recommendation: Needs Diana verification.
 - Client-ready takeaway: Can share only with status caveat.
 
-## Client-Ready Takeaway
-"This one may be worth keeping in the mix if the commute and yard work for you, but I want to verify current status before we count on it for the weekend."
-
 ## Handoff Packet
 From: `02_property_research`
 To: `03_client_communication`
 Matter ID: `MOCK-BUYER-001`
-Stage: Client communication
+Stage: Research to client communication
 Client or lead: Jordan
 Matter: Cautious property-tour reply
 Urgency: Medium
-Current status: Research complete enough for a caveated draft
+Current status: Research complete enough for a caveated draft, current status not verified
+
+## Known Facts
+- A stale internal note says the property was active three days ago.
+- The property appears to match bedroom, budget, and outdoor-space criteria on paper.
+- Current availability is not verified.
 
 ## Missing Information
 - Blocking:
   - Current status from approved source.
 - Helpful:
   - Documentation for claimed updates.
+  - Commute source.
 - Can wait:
   - Final tour time.
+
+## Compliance Flags
+- Fair housing: low, avoid neighborhood suitability claims.
+- Advertising or broker-review: low, one-to-one client reply.
+- Legal, tax, lending, appraisal, or inspection advice: medium, do not advise condition or value.
+- Privacy or sensitive data: low.
+- Source reliability: high, listing status is stale.
+- Wire fraud: not applicable.
+- Buyer rep agreement: verify before showing.
+- Language: unknown.
 
 ## Source And Proof State
 - Source of truth: team-approved MLS or brokerage source needed.
@@ -63,10 +76,21 @@ Current status: Research complete enough for a caveated draft
 - Proof available: old internal note.
 - Proof missing: current status.
 
+## Requested Output
+Draft a short client reply that says the property may be worth checking, but current status must be verified before recommending a tour.
+
+## Next Owner
+`03_client_communication`
+
 ## Human Review
 - Reviewer needed: Diana or assigned agent.
 - Review reason: client-facing recommendation with volatile property facts.
 - Cannot proceed until: status is verified or the draft keeps the status caveat.
+
+## Human Review Needed Before
+- sending to a client
+- relying on a source
+- requesting a showing
 ```
 
 ## Example 2, Fair-Housing-Sensitive Neighborhood Question
@@ -102,27 +126,61 @@ Do not answer with safety, family-suitability, demographic, or "people like us" 
 - Public incident data: Needs client review and source caveat.
 - School boundaries: Needs official district lookup and recheck.
 
-## Client-Ready Takeaway
-"I can't choose a neighborhood for you based on family status or make a blanket safety claim, but I can help you compare areas using objective criteria: commute, budget, home style, parks, school-boundary resources if that matters to you, traffic, transit, and public data sources you can review."
-
 ## Handoff Packet
 From: `02_property_research`
 To: `03_client_communication`
 Matter ID: `MOCK-FAIR-HOUSING-001`
-Stage: Client communication
+Stage: Research to client communication
 Client or lead: Buyer lead
 Matter: Compliant neighborhood research reframe
 Urgency: Medium
 Current status: Safe response direction ready
 
+## Known Facts
+- Client asked for safety and family-suitability conclusions.
+- The team should not make demographic, safety, or protected-class suitability claims.
+- Objective criteria can be offered instead.
+
+## Missing Information
+- Blocking:
+  - Diana must approve the fair-housing-safe phrasing.
+- Helpful:
+  - Which objective criteria matter most to the client.
+  - Exact commute destination and travel mode.
+- Can wait:
+  - Specific property shortlist.
+
 ## Compliance Flags
-- Fair housing: high, client used family and affinity language, reframe to objective criteria.
-- Source reliability: medium, any data source offered must include date and limits.
+- Fair housing: high, reframe to objective criteria.
+- Advertising or broker-review: medium, use neutral educational wording.
+- Legal, tax, lending, appraisal, or inspection advice: low.
+- Privacy or sensitive data: low.
+- Source reliability: medium, any source links need date and limits.
+- Wire fraud: not applicable.
+- Buyer rep agreement: not relevant to this question.
+- Language: unknown.
+
+## Source And Proof State
+- Source of truth: official public-source menu and client-defined criteria, not agent opinion.
+- Source checked at: current chat, no live lookup.
+- Needs recheck before: sending any source link or quoting a boundary result.
+- Proof available: client's wording.
+- Proof missing: client's objective criteria.
+
+## Requested Output
+Draft a compliant response that avoids ranking neighborhoods and asks the client which objective criteria they want compared.
+
+## Next Owner
+`03_client_communication`
 
 ## Human Review
 - Reviewer needed: Diana or broker if unsure.
 - Review reason: fair-housing-sensitive client request.
-- Cannot proceed until: protected-class language is removed from draft.
+- Cannot proceed until: protected-class and safety conclusions are removed.
+
+## Human Review Needed Before
+- sending to a client
+- making any neighborhood comparison
 ```
 
 ## Example 3, Conflicting Permit Signals
@@ -153,9 +211,6 @@ How should Diana handle a listing claim that conflicts with a public permit sear
 - Permit search result: Internal only, limited source.
 - Client-ready conclusion: Do not use yet.
 
-## Client-Ready Takeaway
-"The listing notes say the kitchen work was permitted. I want to verify that before we rely on it, because the first public-record check did not clearly confirm the same thing."
-
 ## Handoff Packet
 From: `02_property_research`
 To: `04_transaction_coordinator`
@@ -166,6 +221,11 @@ Matter: Permit verification follow-up
 Urgency: Medium
 Current status: Conflicting source signals
 
+## Known Facts
+- Listing sheet claims a fully permitted kitchen renovation.
+- Public permit search did not clearly confirm the same claim.
+- The conflict may matter if the buyer relies on renovation status.
+
 ## Missing Information
 - Blocking:
   - Permit number or seller-side documentation if this affects offer strategy.
@@ -175,6 +235,16 @@ Current status: Conflicting source signals
 - Can wait:
   - Contractor opinion unless buyer proceeds.
 
+## Compliance Flags
+- Fair housing: not applicable.
+- Advertising or broker-review: low.
+- Legal, tax, lending, appraisal, or inspection advice: medium, do not conclude legality or condition.
+- Privacy or sensitive data: low.
+- Source reliability: high, sources conflict.
+- Wire fraud: not applicable.
+- Buyer rep agreement: not relevant to this question.
+- Language: unknown.
+
 ## Source And Proof State
 - Source of truth: city permit record plus seller/listing-side documentation.
 - Source checked at: today, mock data.
@@ -182,9 +252,19 @@ Current status: Conflicting source signals
 - Proof available: listing claim and limited permit search.
 - Proof missing: direct permit confirmation.
 
+## Requested Output
+Track the permit-verification task and decide whether this creates a deal task, inspection question, or seller-side follow-up.
+
+## Next Owner
+`04_transaction_coordinator`
+
 ## Human Review
 - Reviewer needed: Diana or assigned agent.
 - Review reason: conflicting property condition/source claim.
 - Cannot proceed until: claim is caveated or verified.
-```
 
+## Human Review Needed Before
+- relying on a source
+- sending to a client
+- adding to a live transaction file
+```

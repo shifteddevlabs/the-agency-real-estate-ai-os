@@ -160,6 +160,6 @@ Texas-specific terms are marked `(TX)`.
 
 ## See Also
 
-- [`04_transaction_coordinator/reference/texas-trec-checklist.md`](04_transaction_coordinator/reference/texas-trec-checklist.md) — Texas TREC forms and the days-calculation rules.
-- [`01_lead_qualifier/reference/first-contact-playbook.md`](01_lead_qualifier/reference/first-contact-playbook.md) — Post-NAR buyer rep agreement requirements.
-- [`CONTRACTS.md`](CONTRACTS.md) — The Agency's internal handoff contracts (not real estate contracts).
+- [`../04_transaction_coordinator/reference/texas-trec-checklist.md`](../04_transaction_coordinator/reference/texas-trec-checklist.md) — Texas TREC forms and the days-calculation rules.
+- [`../01_lead_qualifier/reference/first-contact-playbook.md`](../01_lead_qualifier/reference/first-contact-playbook.md) — Post-NAR buyer rep agreement requirements.
+- [`handoff-contracts.md`](handoff-contracts.md) — The Agency's internal handoff contracts (not real estate contracts).

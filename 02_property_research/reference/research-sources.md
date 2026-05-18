@@ -1,6 +1,6 @@
 # Research Sources
 
-This folder uses the source policy in the root `RESEARCH-SOURCES.md`.
+This folder uses the source policy in `../../reference/research-sources.md`.
 
 ## Fast Research Checklist
 
@@ -50,4 +50,3 @@ Avoid:
 - "up and coming because of demographics"
 - "guaranteed appreciation"
 - "definitely worth..."
-

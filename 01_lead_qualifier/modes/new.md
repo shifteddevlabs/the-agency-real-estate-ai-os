@@ -20,7 +20,7 @@ Ask only the questions you don't already have answers to. Skip any that are pre-
 > "**Question 3 of 6.** Are they looking to buy, sell, or both?"
 
 ### Q4, Motivation
-> "**Question 4 of 6.** Why now? Even a one-line answer is fine. Job change, growing family, downsizing, investment, just curious."
+> "**Question 4 of 6.** Why now? Even a one-line answer is fine. Job change, space needs, downsizing, investment, just curious."
 
 ### Q5, Timeline
 > "**Question 5 of 6.** What's their timeline? 'Immediately,' '30 to 60 days,' 'spring 2027,' or 'just exploring' all work."

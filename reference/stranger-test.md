@@ -75,17 +75,17 @@ Glanced at FAQ to make sure I wasn't supposed to do onboarding first. The FAQ co
 The system was updated after this transcript was captured. Specific changes:
 
 1. **Name collision fixed.** The README's "Typical Flow" example was renamed from "Sarah Jones" to "Alex Chen." A team member running the test with a real Sarah Jones lead will no longer get confused.
-2. **Glossary added.** [`GLOSSARY.md`](GLOSSARY.md) at repo root, defining TREC, IABS, MLS, NAR, TXR-1501, EMD, CD, CMA, DOM, POA, HOA, and ~15 other terms. Linked from README.
+2. **Glossary added.** [`glossary.md`](glossary.md), defining TREC, IABS, MLS, NAR, TXR-1501, EMD, CD, CMA, DOM, POA, HOA, and other terms. Moved under `reference/` to keep the submission route strict.
 
 ## v1.1 Items (addressed)
 
 All five v1.1 items have been implemented:
 
 1. **README front-door density** — **DONE.** Added a "Your First Lead (2-minute walkthrough)" cheat-sheet between the 5-Minute Setup and Every-Day Use sections. Shows one concrete request → routing → drafts → human review loop end-to-end in under 20 lines.
-2. **Assistant vs. agent role clarity** — **DONE.** New file [`00_orchestrator/reference/assistant-vs-agent-roles.md`](00_orchestrator/reference/assistant-vs-agent-roles.md) enumerates what an unlicensed assistant can do, what must route to Diana, and how the system reflects this. Linked from README's Every-Day Use section.
-3. **Sample completed profile.md** — **DONE.** Created [`_user_data/profile.md`](_user_data/profile.md) (placeholder that triggers onboarding) and [`_user_data/profile.example.md`](_user_data/profile.example.md) (synthetic worked example showing every field populated). Orchestrator updated to check for the placeholder and gate work on it.
-4. **Compliance flags destination** — **DONE.** Added "What The User Does With Compliance Flags" section to [`00_orchestrator/rules.md`](00_orchestrator/rules.md) explaining how to act on each severity level.
-5. **"Referrer didn't share contact" script** — **DONE.** New "Sub-case: Referrer didn't share contact info" added to the Referral Text section of [`01_lead_qualifier/reference/first-contact-playbook.md`](01_lead_qualifier/reference/first-contact-playbook.md). Includes the reply script, the reasoning, and handoff hints when blocked.
+2. **Assistant vs. agent role clarity** — **DONE.** New file [`../00_orchestrator/reference/assistant-vs-agent-roles.md`](../00_orchestrator/reference/assistant-vs-agent-roles.md) enumerates what an unlicensed assistant can do, what must route to Diana, and how the system reflects this. Linked from README's Every-Day Use section.
+3. **Sample completed profile.md** — **DONE.** Created [`../_user_data/profile.template.md`](../_user_data/profile.template.md) (template for the private ignored profile) and [`../_user_data/profile.example.md`](../_user_data/profile.example.md) (synthetic worked example showing every field populated). Orchestrator updated to check for a missing or unconfigured private profile and gate work on it.
+4. **Compliance flags destination** — **DONE.** Added "What The User Does With Compliance Flags" section to [`../00_orchestrator/rules.md`](../00_orchestrator/rules.md) explaining how to act on each severity level.
+5. **"Referrer didn't share contact" script** — **DONE.** New "Sub-case: Referrer didn't share contact info" added to the Referral Text section of [`../01_lead_qualifier/reference/first-contact-playbook.md`](../01_lead_qualifier/reference/first-contact-playbook.md). Includes the reply script, the reasoning, and handoff hints when blocked.
 
 ## What This Test Proves
 

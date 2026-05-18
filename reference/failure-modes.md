@@ -137,7 +137,7 @@ A system that doesn't acknowledge how it fails is not a real system. These are r
 
 **Recovery:** System produces a response that explains it cannot relay wire instructions, names the wire-fraud risk, and offers to draft a "call title to verify" message instead. Routes back to orchestrator with wire-fraud risk flag raised.
 
-**Architectural protection:** Hard never-rule in `03_client_communication/rules.md` AND `04_transaction_coordinator/rules.md`. Defense in depth. Demonstrated in [`SCENARIOS/05-wire-fraud-attempt.md`](SCENARIOS/05-wire-fraud-attempt.md).
+**Architectural protection:** Hard never-rule in `../03_client_communication/rules.md` AND `../04_transaction_coordinator/rules.md`. Defense in depth. Demonstrated in [`scenarios/05-wire-fraud-attempt.md`](scenarios/05-wire-fraud-attempt.md).
 
 ### Auto-translation request
 
@@ -167,7 +167,7 @@ A system that doesn't acknowledge how it fails is not a real system. These are r
 
 **How it surfaces:** Coordinator refuses to characterize severity.
 
-**Recovery:** Coordinator produces structure (inspector said X, structural engineer should evaluate before any severity claim, four buyer paths) but not a recommendation. Demonstrated in [`SCENARIOS/04-inspection-crisis.md`](SCENARIOS/04-inspection-crisis.md).
+**Recovery:** Coordinator produces structure (inspector said X, structural engineer should evaluate before any severity claim, four buyer paths) but not a recommendation. Demonstrated in [`scenarios/04-inspection-crisis.md`](scenarios/04-inspection-crisis.md).
 
 **Architectural protection:** Inspection-renegotiation playbook explicitly rejects severity-claim language.
 
@@ -191,7 +191,7 @@ A system that doesn't acknowledge how it fails is not a real system. These are r
 
 **Recovery:** Team member pastes the prior handoff packet or summary into the new chat. The system treats each chat as a fresh start.
 
-**Architectural protection:** This is a known limitation of the no-software human-paste model. Documented in [`DESIGN-NOTES.md`](DESIGN-NOTES.md). A future v2 could persist packets as JSON files for re-loading, but v1 keeps them in-chat.
+**Architectural protection:** This is a known limitation of the no-software human-paste model. Documented in [`design-notes.md`](design-notes.md). A future v2 could persist packets as JSON files for re-loading, but v1 keeps them in-chat.
 
 ### Hallucinated facts
 
