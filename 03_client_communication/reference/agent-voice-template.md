@@ -1,6 +1,6 @@
 # Agent Voice Template
 
-Copy this file to `agent-voice.md` after Diana completes `setup/voice-onboarding.md`.
+Copy this file to `agent-voice.md` after Diana completes `support/setup/voice-onboarding.md`.
 
 Use `human-writing-baseline.md` first. This file adds Diana's personal layer on top of the generic human-writing standard.
 

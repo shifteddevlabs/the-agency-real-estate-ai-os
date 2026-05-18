@@ -10,12 +10,16 @@ Recommended filename:
 lead-deal-logs/YYYY-MM-DD-client-or-address.md
 ```
 
-If you do not use local files, ask the assistant for "CRM notes version" and paste the same lead/deal log content into the official lead or deal record.
+If your AI app can write files, ask it to save the log for you. If it cannot, ask for the exact filename and text, plus a "CRM notes version" you can paste into the official lead or deal record.
 
 ## Beginner Prompt
 
 ```text
-Create or update the lead/deal log for this lead. Give me exactly what to save as `lead-deal-logs/YYYY-MM-DD-client-or-address.md` and what to paste into my CRM notes.
+Create or update the lead/deal log for this lead.
+
+If you can write files, save it as `lead-deal-logs/YYYY-MM-DD-client-or-address.md`.
+
+If you cannot write files, give me the exact filename, the exact text to save, and a CRM notes version.
 ```
 
 ## Filled Example
@@ -23,7 +27,7 @@ Create or update the lead/deal log for this lead. Give me exactly what to save a
 ```md
 # Lead/Deal Log
 
-Matter ID: 20260518-alex-east-austin-buyer-intake
+Lead/deal ID: 20260518-alex-east-austin-buyer-intake
 Client or lead: Alex, referred by Mike
 Stage: New buyer lead, intake incomplete
 Assigned human owner: Diana
@@ -68,7 +72,7 @@ Last updated: 2026-05-18
 - Buyer representation or listing agreement: Buyer-rep status unknown, do not schedule showings.
 - Language: Unknown.
 
-## Last Handoff Packet
+## Last Handoff Note
 
 From: 00_orchestrator
 To: 01_lead_qualifier
@@ -95,7 +99,7 @@ Next owner: Lead qualifier
 ```md
 # Lead/Deal Log
 
-Matter ID:
+Lead/deal ID:
 Client or lead:
 Stage:
 Assigned human owner:
@@ -131,9 +135,9 @@ Last updated:
 - Buyer representation or listing agreement:
 - Language:
 
-## Last Handoff Packet
+## Last Handoff Note
 
-Paste the most recent complete handoff packet here.
+Paste the most recent complete handoff note here. If it came from a specialist folder, it may use the formal packet label `Matter ID`.
 
 ## Client-Safe Drafts
 
@@ -167,10 +171,10 @@ Continue from this state. Do not assume anything missing. Tell me the next safes
 - After property research is refreshed.
 - After a deadline is verified from an executed contract.
 - After Diana, broker, title, lender, attorney, or a client makes a decision.
-- Before starting a new chat on the same matter.
+- Before starting a new chat on the same lead or deal.
 
-## Database Or Markdown?
+## Plain Text Or Database?
 
-Use markdown for v1. It is portable, readable, easy to paste into chat, and does not require installation.
+Use a plain text markdown file for v1. It is readable, easy to paste into chat, and does not require installation.
 
-A local database could help a future software version with search, dashboards, audit replay, and reporting. For this folder-based submission, a database would add setup friction and make the system feel less usable for nontechnical agents.
+A database could make sense in a future app. For this folder-based version, plain text is faster, easier, and less intimidating for a busy real estate team.

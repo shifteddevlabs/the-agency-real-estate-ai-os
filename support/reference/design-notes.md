@@ -1,14 +1,22 @@
 # Design Notes
 
-The architectural choices that shape The Agency. The five load-bearing decisions come first because they are the most consequential. The compliance and scope choices follow. Alternatives considered and rejected come next. Reused patterns are documented at the bottom for traceability.
+The architectural choices that shape The Agency. The load-bearing decisions come first because they are the most consequential. The compliance and scope choices follow. Alternatives considered and rejected come next. Reused patterns are documented at the bottom for traceability.
 
 ---
 
 # Load-Bearing Design Decisions
 
-Five intentional calls that shape how this system feels to use. Each one trades something away to gain something else. Documented here so future maintainers (and judges) understand the *why*.
+Six intentional calls that shape how this system feels to use. Each one trades something away to gain something else. Documented here so future maintainers (and judges) understand the *why*.
 
-## 1. No software, human-paste model
+## 1. Dual-readability
+
+**Decision.** The system has to work for two readers at once: a nontechnical realtor who wants to paste a request and move on, and a technical reviewer or power user who wants to inspect the folder logic.
+
+**Why.** The brief asks whether someone could hand this to a real estate team and have them use it. That means the README has to be simple enough for daily work, while the folder structure still needs enough detail to prove the handoffs are real.
+
+**Tradeoff.** Some details move out of the first-read path and into `support/`. That makes the root cleaner, but it means deeper reviewers need one extra click. The payoff is worth it: the root stays approachable, and the deeper design is still available.
+
+## 2. No software, human-paste model
 
 **Decision.** The system does not directly integrate with the MLS, a CRM, an email platform, or any external API. When the user needs MLS data, they paste it in. When the user wants to send an email, they copy the draft out and send it themselves.
 
@@ -18,7 +26,7 @@ Five intentional calls that shape how this system feels to use. Each one trades 
 
 **When to revisit.** If the team is willing to invest 20 minutes in setup, a v2 could add an optional MLS API integration path via Bridge Interactive. Documented as a future upgrade, not v1.
 
-## 2. One question at a time
+## 3. One question at a time
 
 **Decision.** Specialists ask one question per turn. They never present a five-question form or a checklist for the user to fill out.
 
@@ -26,15 +34,15 @@ Five intentional calls that shape how this system feels to use. Each one trades 
 
 **Tradeoff.** Power users move slower than they could. Mitigation: any specialist will accept a single message that contains all the info at once and skip the question-by-question flow.
 
-## 3. Predefined filenames and folders
+## 4. Predefined filenames and folders
 
 **Decision.** Every file the system generates has a fixed name and a fixed destination. The user never invents a filename, picks a folder, or navigates a file tree.
 
-**Why.** Filename and folder decisions are where non-technical users freeze. Removing the choice removes the friction. The system says: "Save this as `profile.md` and drag it into the `_user_data` folder." If the user asks where, the system shows them.
+**Why.** Filename and folder decisions are where nontechnical users freeze. Removing the choice removes the friction. The system says: "Save this as `profile.md` in `_user_data/`." If the AI app can write files, it should do that directly. If not, it gives the user the exact filename and text.
 
 **Tradeoff.** The folder structure is rigid. If the user wants to organize their own way, they can't. That is intentional. Rigid structure is the feature for this audience.
 
-## 4. Outputs live in chat first, file second
+## 5. Outputs live in chat first, file second
 
 **Decision.** Every output (email draft, research report, transaction checklist) appears in the chat in full, formatted, copyable. A downloadable file version is offered as a *follow-up* if the user wants it.
 
@@ -42,7 +50,7 @@ Five intentional calls that shape how this system feels to use. Each one trades 
 
 **Tradeoff.** Long outputs (a full CMA, a transaction timeline) can run long in chat. Mitigation: outputs are structured with clear headers so the user can scroll, and the file version is always one prompt away.
 
-## 5. LLM-agnostic, plain-English instructions
+## 6. LLM-agnostic, plain-English instructions
 
 **Decision.** All instructions inside the `.md` files are written in plain English, neutral about which AI tool is reading them. No "use the WebFetch tool" or "run this Python snippet" or "invoke MCP server X."
 
@@ -54,11 +62,22 @@ Five intentional calls that shape how this system feels to use. Each one trades 
 
 # Architecture Decisions
 
+## Root Folder Shape
+
+The root stays focused on the assignment and real use:
+
+- The five required specialist folders.
+- `_user_data/`, because the system needs a private team profile.
+- `lead-deal-logs/`, because active leads and deals need a reusable recap between chats.
+- `support/`, because setup, reference, and internal test material help the system without crowding the main path.
+
+This keeps the public structure clean while preserving the extra material that makes the project teachable, testable, and usable by a real team.
+
 ## Orchestrator As Compliance Filter
 
 The system uses the orchestrator as a compliance filter, not just a router. Real estate work has high trust, legal, advertising, privacy, and fair-housing risk. If compliance only appears inside the specialist folders, a risky request can get too far before anyone notices. Putting the flagging step first makes the whole team safer.
 
-This is the design decision called out in the 100-word submission writeup. It matters because mistakes in real estate often happen before writing starts: wrong owner, missing source, stale status, fair-housing-sensitive wording, unverified deadline. Flagging those at the orchestrator stops them before a specialist produces text.
+This is a supporting design decision in the submission writeup. It matters because mistakes in real estate often happen before writing starts: wrong owner, missing source, stale status, fair-housing-sensitive wording, unverified deadline. Flagging those at the orchestrator stops them before a specialist produces text.
 
 ## Scope Decision: No Live MLS
 
@@ -68,7 +87,7 @@ A future v2 could add Bridge Interactive RESO Web API integration for teams will
 
 ## What This Is Not
 
-- **Not a CRM replacement.** The system helps draft and analyze. It does not store leads, track deals over time, or send anything on its own.
+- **Not a CRM replacement.** The system helps draft, analyze, and keep plain recap notes. It does not replace the team's CRM, manage the sales pipeline, or send anything on its own.
 - **Not a compliance tool.** Texas-specific dates and TREC references in `04_transaction_coordinator` are guidance, not legal advice. Final responsibility rests with the licensed agent.
 - **Not autonomous.** Every output is reviewed by a human before it leaves the system.
 
@@ -107,7 +126,7 @@ Documenting the alternatives explored matters more than documenting the choices 
 
 - Removes the safety net. Every real estate communication has compliance weight (fair-housing, advertising, broker-review, representation). Removing the human review gate would create constant legal exposure.
 - Removes Diana's voice. The voice profile works because Diana sees every draft and can correct anything that drifts. Auto-send breaks that feedback loop.
-- Conflicts with the no-software stance (load-bearing decision #1). Auto-send requires API integration with the client's email/SMS provider, which is software.
+- Conflicts with the no-software stance (load-bearing decision #2). Auto-send requires API integration with the client's email/SMS provider, which is software.
 - Most real estate errors happen before the message is sent. The review gate is the protection.
 
 ## 4. A Single "Compliance" Folder Instead Of Compliance In Every Specialist
@@ -151,7 +170,7 @@ The Agency recommissions proven patterns from prior agent and workflow work, rew
 
 ## How To Read These Decisions
 
-If you are a developer evaluating the architecture, the five load-bearing decisions above are the foundational choices. Changing any of them changes what the system is. The folder structure, the specialist roster, even the handoff protocol are all downstream of those five calls.
+If you are a developer evaluating the architecture, the load-bearing decisions above are the foundational choices. Changing any of them changes what the system is. The folder structure, the specialist roster, even the handoff protocol are all downstream of those calls.
 
 The orchestrator-as-compliance-filter and the no-live-MLS scope are second-order choices that shape what work happens where, but they don't change the fundamental shape of the system.
 

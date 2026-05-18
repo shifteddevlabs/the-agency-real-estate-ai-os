@@ -11,15 +11,15 @@ This document uses placeholders only. Do not add real client data, private notes
 3. Ask 2 to 4 natural intake questions.
 4. Confirm representation status before giving substantive guidance.
 5. Assign lead temperature: `Hot`, `Warm`, `Nurture`, or `Unqualified`.
-6. Prepare a handoff packet if a human or another capability should take over.
+6. Prepare a handoff note if a human or another folder should take over.
 
 For message quality, use `03_client_communication/reference/sales-psychology-baseline.md`: acknowledge the concern, ask only useful questions, lower the stakes, and end with one easy next step.
 
-## Lead Enrichment Policy
+## Extra Lookup Rules
 
-Default: enrich the request, not the person.
+Default: look up the request, not the person.
 
-For first contact, the useful enrichment is usually:
+For first contact, the useful extra context is usually:
 
 - What source did the lead come from?
 - What property, area, budget, or timeline did they mention?
@@ -27,11 +27,11 @@ For first contact, the useful enrichment is usually:
 - What is the next consent-based reply?
 - What facts need verification before a response?
 
-Do not use people-search, skip-tracing, email-finder, or personal-data enrichment tools for consumer leads unless Diana's brokerage has approved the workflow, consent rules, and privacy policy.
+Do not use people-search, skip-tracing, email-finder, or personal-data lookup tools for consumer leads unless Diana's brokerage has approved the workflow, consent rules, and privacy policy.
 
-Norbert-style enrichment can be useful for business outreach, but it is not the default for residential real estate leads. Most residential first-contact work should rely on submitted information, referral context, CRM history, and the lead's own answers.
+Business-contact lookup tools can be useful for business outreach, but they are not the default for residential real estate leads. Most residential first-contact work should rely on submitted information, referral context, CRM history, and the lead's own answers.
 
-Allowed enrichment:
+Allowed lookup:
 
 - Team CRM history.
 - Submitted form fields.
@@ -45,7 +45,7 @@ Not allowed by default:
 - Pulling personal phone numbers from third-party data brokers.
 - Scraping social profiles.
 - Adding sensitive personal, family, financial, or hardship details to handoffs.
-- Using enrichment to pressure a distressed seller or buyer.
+- Using outside lookup to pressure a distressed seller or buyer.
 
 ## Required Intake Fields
 
@@ -204,7 +204,7 @@ Common pattern: the referrer says something like "she's expecting your call" or 
 
 Use this reply to the referral source:
 
-> Thanks, happy to help. Quick blocker — I don't have [Lead First Name]'s number or email on this thread. Could you forward me their contact info, or send them my info so they can reach me first? Either works. I just want to make sure the intro is clean on their end too.
+> Thanks, happy to help. Quick blocker, I don't have [Lead First Name]'s number or email on this thread. Could you forward me their contact info, or send them my info so they can reach me first? Either works. I just want to make sure the intro is clean on their end too.
 
 Why this matters:
 
@@ -215,7 +215,7 @@ Why this matters:
 Handoff hints when contact info is still missing:
 
 - Mark intake status as `Blocked on contact info from referrer`.
-- Do NOT search public sources, people-search tools, or social media for the lead's contact info — that's lead enrichment outside the consent boundary.
+- Do NOT search public sources, people-search tools, or social media for the lead's contact info. That is outside the consent boundary.
 - Wait for the referrer's response, then proceed with the standard referral-lead flow.
 - If the referrer doesn't respond within 24 hours, send one polite follow-up text, then defer to Diana.
 

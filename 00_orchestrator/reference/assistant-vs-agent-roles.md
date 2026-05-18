@@ -95,7 +95,7 @@ You are NOT trying to make the system produce a final-form output that you then 
 ### A buyer wants to tour a home
 
 - **You:** Capture the request. The system will flag that a signed buyer rep agreement is required before any tour.
-- **You:** If no rep agreement, the next step is a buyer consult — schedule that.
+- **You:** If no rep agreement, the next step is a buyer consult, schedule that.
 - **Diana:** Conducts the rep agreement consult, signs the agreement, then schedules the tour.
 - **You:** Add the rep agreement to the deal file. Coordinate the tour calendar.
 
@@ -132,7 +132,7 @@ A useful test: "Could a court or regulator argue that what I'm about to say is r
 
 ## What This Reference Does NOT Cover
 
-- Specific state licensing rules. Texas TREC has its own definitions of what unlicensed activity is. Treat this document as a working baseline, not a legal rulebook. Diana's broker is the source of truth on the brokerage's interpretation.
+- Specific state licensing rules. Texas TREC has its own definitions of what unlicensed activity is. Treat this document as a working baseline, not a legal rulebook. Diana's broker is the official answer for how the brokerage interprets those rules.
 - New construction, commercial, or specialty transactions. Those have their own boundaries.
 - The agent's own internal training and standards for what they delegate. Diana may be more conservative or more permissive than this baseline; she decides.
 

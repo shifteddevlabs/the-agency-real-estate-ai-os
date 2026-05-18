@@ -1,4 +1,4 @@
-# Handoff Protocol
+# Handoff Notes
 
 ## What I Receive
 
@@ -11,7 +11,7 @@
 
 ## What I Produce
 
-I produce a routing decision and a handoff packet.
+I produce a route and a handoff note. The formal version of that note is called a handoff packet.
 
 ## Standard Handoff Packet
 

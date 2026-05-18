@@ -1,6 +1,8 @@
-# Handoff Contracts
+# Handoff Rules
 
-The brief said the handoff protocol is the test of this week. This document formalizes it. Every handoff direction has required fields, forbidden fields, and explicit rejection conditions.
+The brief said the handoff protocol is the test of this week. This document is the formal version of the handoff note described in the root README.
+
+Use the root README for normal team onboarding. Use this file when a reviewer, maintainer, or advanced user needs exact packet rules.
 
 A receiver specialist that gets a packet missing required fields returns it to the orchestrator with a rejection note. This is demonstrated in [`scenarios/06-broken-handoff.md`](scenarios/06-broken-handoff.md).
 
@@ -20,6 +22,8 @@ Every packet in The Agency must include:
 | `Current status` | What's been done so far, in one sentence. |
 
 A packet missing ANY of the eight is rejected at the receiver.
+
+In user-facing docs, `Matter ID` can be explained as the lead/deal ID. The formal field name stays `Matter ID` so all specialist handoffs use the same label.
 
 ## Universal Required Sections
 
@@ -192,9 +196,66 @@ Across all handoffs, packets must NEVER contain:
 **Receiver behavior:**
 - Human owner takes the next step. System pauses on this Matter ID until human signals resolution.
 
+## Full Packet
+
+Use this full shape for sensitive work, stage changes, or anything that may affect a client, broker, attorney, lender, title company, or live deal file:
+
+```md
+## Handoff Packet
+
+From:
+To:
+Matter ID:
+Stage:
+Client or lead:
+Matter:
+Urgency:
+Current status:
+
+## Known Facts
+-
+
+## Missing Information
+- Blocking:
+- Helpful:
+- Can wait:
+
+## Compliance Flags
+- Fair housing:
+- Advertising or broker-review:
+- Legal, tax, lending, or inspection advice:
+- Privacy or sensitive data:
+- Source reliability:
+- Wire fraud:
+- Buyer representation or listing agreement:
+- Language:
+
+## Source And Proof State
+- Source of truth:
+- Source checked at:
+- Needs recheck before:
+- Proof available:
+- Proof missing:
+
+## Requested Output
+
+## Next Owner
+
+## Human Review
+- Reviewer needed:
+- Review reason:
+- Cannot proceed until:
+
+## Human Review Needed Before
+- sending to a client
+- changing a deadline
+- relying on a source
+- adding to a live transaction file
+```
+
 ## Minimum Packet vs Full Packet
 
-The full schema in [`../README.md`](../README.md) (Handoff Packet section) lists ~15 fields. Use the full schema for:
+Use the full packet for:
 
 - Compliance-sensitive handoffs (any wire-fraud, fair-housing, advertising, or representation issue).
 - Stage transitions (intake → research → draft, or research → transaction).

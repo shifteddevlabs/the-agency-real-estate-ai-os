@@ -125,7 +125,7 @@ A system that doesn't acknowledge how it fails is not a real system. These are r
 **Recovery:**
 1. System auto-revises before showing the draft to Diana, if voice score is below threshold.
 2. If still off, team member can say "the voice is off, make it sharper / warmer / shorter" and the system re-drafts.
-3. If consistently off, that signals the synthetic Diana voice is still in place. Run `setup/voice-onboarding.md` to replace it.
+3. If consistently off, that signals the synthetic Diana voice is still in place. Run `support/setup/voice-onboarding.md` to replace it.
 
 **Architectural protection:** Voice score is a required output, calibrated against Diana's profile.
 
@@ -137,7 +137,7 @@ A system that doesn't acknowledge how it fails is not a real system. These are r
 
 **Recovery:** System produces a response that explains it cannot relay wire instructions, names the wire-fraud risk, and offers to draft a "call title to verify" message instead. Routes back to orchestrator with wire-fraud risk flag raised.
 
-**Architectural protection:** Hard never-rule in `../03_client_communication/rules.md` AND `../04_transaction_coordinator/rules.md`. Defense in depth. Demonstrated in [`scenarios/05-wire-fraud-attempt.md`](scenarios/05-wire-fraud-attempt.md).
+**Architectural protection:** Hard never-rule in `../../03_client_communication/rules.md` AND `../../04_transaction_coordinator/rules.md`. Defense in depth. Demonstrated in [`scenarios/05-wire-fraud-attempt.md`](scenarios/05-wire-fraud-attempt.md).
 
 ### Auto-translation request
 

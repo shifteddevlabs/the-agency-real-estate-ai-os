@@ -1,6 +1,6 @@
 # Research Sources
 
-This folder uses the source policy in `../../reference/research-sources.md`.
+This folder uses the source policy in `../../support/reference/research-sources.md`.
 
 ## Fast Research Checklist
 

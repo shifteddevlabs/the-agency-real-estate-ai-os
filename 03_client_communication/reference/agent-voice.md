@@ -2,7 +2,7 @@
 
 > **This is a synthetic example.** It is not Diana's actual voice. It exists so the demo loop works on day one and so reviewers can see what a finished voice profile looks like.
 >
-> Before using The Agency with the real team, run `setup/voice-onboarding.md` and replace this file with Diana's actual voice profile. The mock keeps the same field structure as the template, so swapping is one file overwrite.
+> Before using The Agency with the real team, run `support/setup/voice-onboarding.md` and replace this file with Diana's actual voice profile. The mock keeps the same field structure as the template, so swapping is one file overwrite.
 
 ## Default Tone
 
@@ -179,7 +179,7 @@ Example:
 
 ## Voice Score Calibration
 
-When scoring drafts against this profile, use the 1 to 5 rubric in `setup/voice-onboarding.md`. The two highest-weight criteria for Diana specifically are:
+When scoring drafts against this profile, use the 1 to 5 rubric in `support/setup/voice-onboarding.md`. The two highest-weight criteria for Diana specifically are:
 
 1. **Does it lead with the next step?** Diana's emails always move forward. If the draft buries the action, it's a 3 at best.
 2. **Does it manufacture urgency or hedge?** Both are auto-fails for the voice. Real urgency is fine. Fake urgency is a 1.
