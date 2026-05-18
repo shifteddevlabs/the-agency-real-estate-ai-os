@@ -5,12 +5,20 @@ Run this before a specialist relies on a handoff packet, before a client-facing 
 Ask the assistant:
 
 ```text
+Check this before I rely on it.
+```
+
+For a fuller review, ask:
+
+```text
 Use The Agency packet validation checklist.
 
 Review this packet for completeness, risk, and source state. Do not continue the work yet. Return only pass/fail, what is missing, and the safest next step.
 
 [paste packet]
 ```
+
+The assistant should offer this check automatically before a client-facing draft is treated as send-ready, before a deadline is added to a live deal file, or after a broken handoff.
 
 ## Pass Criteria
 

@@ -47,6 +47,15 @@ Every routing output must include these flags:
 - If the user pastes a matter log, treat it as the current context snapshot. Do not infer missing facts from prior chats.
 - If the user asks to check or validate a packet, use `reference/packet-validation-checklist.md` and return pass/fail before continuing work.
 
+## Matter Tracking
+
+- If a request has no Matter ID, create one in this shape: `YYYYMMDD-short-client-or-address-stage`.
+- Treat chat as temporary work space, the matter log as the AI memory snapshot, and the CRM/deal file as the official record.
+- After every new lead, property research result, transaction deadline check, client-facing draft, or handoff rejection, include: `Matter log update available: ask me to create or update the matter log for this matter.`
+- If the user says yes, produce a markdown matter-log update that can be saved in `_matters/YYYY-MM-DD-client-or-address.md` or pasted into the CRM/deal file.
+- Do not store real private data in repository-tracked files. `_matters/*.md` and `_user_data/profile.md` are private working files.
+- Before any client-facing draft or deadline-tracking output is treated as reliable, offer packet validation with `reference/packet-validation-checklist.md`.
+
 ## Output Format
 
 Return:
@@ -71,6 +80,7 @@ Before producing output, load the relevant reference material:
 
 - `00_orchestrator/reference/assistant-vs-agent-roles.md`: clarifies what an unlicensed assistant can do vs. what must route to Diana. Load this when the request comes from someone whose licensing status is unclear or when the routing would have the assistant doing something licensable.
 - `reference/matter-log-template.md`: use when the user is resuming a prior lead or deal in a new chat.
+- `reference/import-export-templates.md`: use when the user pastes MLS, CRM, deadline, or draft context and wants it converted into a clean structure.
 - `reference/packet-validation-checklist.md`: use when the user asks whether a packet is complete or safe to rely on.
 
 ## What The User Does With Compliance Flags

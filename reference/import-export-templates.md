@@ -2,7 +2,26 @@
 
 These templates help power users paste dense context from MLS, CRM, transaction tools, or email without forcing the AI to infer structure.
 
+You do not have to fill these out manually. Paste messy notes and ask the assistant to convert them.
+
 Use redacted or synthetic examples in public work. For live clients, keep these in the private AI project or transaction file.
+
+## Which Template Do I Use?
+
+| If you have | Use |
+|---|---|
+| Portal lead, referral text, CRM note, call recap | CRM Lead Note |
+| MLS facts, listing notes, county/property data | MLS or Property Export |
+| Executed contract dates, inspection deadlines, closing items | Transaction Deadline Update |
+| A message draft that needs review or storage | Client Draft Export |
+
+Shortcut prompt:
+
+```text
+Convert these messy notes into the right Agency import template. If anything is missing, mark it as missing instead of guessing.
+
+[paste notes]
+```
 
 ## MLS or Property Export
 

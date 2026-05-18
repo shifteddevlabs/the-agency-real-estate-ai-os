@@ -1,3 +1,5 @@
 .DS_Store
 /tests/
 /_user_data/profile.md
+/_matters/*.md
+!/_matters/README.md
