@@ -23,6 +23,13 @@ Every handoff must preserve:
 
 - `Matter ID`
 - `Stage`
+- `Return to`
+- `Back reason`
+- `Confidence`
+- `Trail`
+- `Stall trigger`
+- `Next check`
+- `Last touched by`
 - `Blocking` missing information
 - `Helpful` missing information
 - `Source of truth`
@@ -32,6 +39,8 @@ Every handoff must preserve:
 - `Review reason`
 - `Cannot proceed until`
 - `Human Review` gate
+- `Agency Standard` footer
+- Lead/deal log update need
 
 ## Handoff To Client Communication
 
@@ -45,6 +54,8 @@ Include:
 - Items that need caveats.
 - Items Diana must verify first.
 - Any phrasing constraints, especially fair-housing-sensitive wording.
+- Source confidence.
+- Needs recheck before.
 
 ## Handoff To Transaction Coordinator
 
@@ -58,9 +69,17 @@ Include:
 - Inspection, permit, title, HOA, survey, or disclosure questions.
 - Deadline if known.
 - Who should own each follow-up.
+- Proof available and proof missing.
 
 ## Return To Orchestrator When
 
 - Source access is blocked.
 - The request requires an attorney, inspector, lender, appraiser, title company, or broker decision.
 - A client asks for a conclusion that would create fair-housing or professional-advice risk.
+
+## Process References
+
+- Use `../support/reference/handoff-contracts.md` for universal handoff metadata.
+- Use `../support/reference/agency-standard.md` before research becomes a recommendation or client-ready takeaway.
+- Use `../support/reference/lead-deal-log-template.md` after material source checks, source conflicts, or research handoffs.
+- Use `../support/reference/deal-desk.md` signals for source rechecks, blocked research, and stale items.

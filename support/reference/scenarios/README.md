@@ -26,3 +26,10 @@ Each scenario follows the same shape:
 5. **What This Demonstrates** — which architecture principles this scenario exercises.
 
 The handoff packets in these scenarios are reference examples. Real packets may include fewer fields (use the minimum schema in `../handoff-contracts.md`) or more (for compliance-sensitive handoffs).
+
+For live use, apply the current shared workflow on top of every scenario packet:
+
+- Use `../handoff-contracts.md` for return path, confidence, trail, stall trigger, next check, and last-touched metadata.
+- Use `../agency-standard.md` before output moves forward.
+- Use `../lead-deal-log-template.md` to update state after each meaningful handoff.
+- Use `../deal-desk.md` when several scenario logs need a daily operating view.

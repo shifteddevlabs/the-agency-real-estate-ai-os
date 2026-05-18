@@ -21,6 +21,8 @@ This scenario shows what happens when the receiver rejects.
 
 ## Handoff Chain (with rejection)
 
+Scenario packets are abbreviated for readability. In live use, missing shared metadata from `../handoff-contracts.md`, missing Agency Standard fields, or missing lead/deal log update path are also valid rejection reasons.
+
 ### Packet 1: 00 → 03 (thin, no research data)
 
 ```md

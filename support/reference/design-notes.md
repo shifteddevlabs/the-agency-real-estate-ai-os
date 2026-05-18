@@ -73,6 +73,19 @@ The root stays focused on the assignment and real use:
 
 This keeps the public structure clean while preserving the extra material that makes the project teachable, testable, and usable by a real team.
 
+## Shared Process Docs, Specialist-Owned Signals
+
+Process-wide rules live once in `support/reference/`. The Agency Standard, Deal Desk, handoff contracts, packet validation, and lead/deal log template are shared because all four main specialists use them.
+
+Specialist folders do not duplicate those processes. Instead, each specialist's `rules.md` names the signals it contributes:
+
+- `01_lead_qualifier/`: lead temperature, status, representation gate, follow-up, and next check.
+- `02_property_research/`: source confidence, source recheck date, conflicts, and client-shareable status.
+- `03_client_communication/`: draft status, reviewer, due message, voice score, and language-review need.
+- `04_transaction_coordinator/`: verified dates, unverified dates, proof, blockers, escalation owner, and deadline risk.
+
+This keeps the system easy to navigate while making the operational workflow stronger.
+
 ## Orchestrator As Compliance Filter
 
 The system uses the orchestrator as a compliance filter, not just a router. Real estate work has high trust, legal, advertising, privacy, and fair-housing risk. If compliance only appears inside the specialist folders, a risky request can get too far before anyone notices. Putting the flagging step first makes the whole team safer.
@@ -161,6 +174,8 @@ The Agency recommissions proven patterns from prior agent and workflow work, rew
 | Router-first agent-system pattern | `00_orchestrator/` | Keeps messy requests from leaking into the wrong specialist |
 | Identity, rules, examples structure | Every specialist folder | Makes each folder teachable and portable |
 | Stage contracts and handoffs | Every `handoff.md` | The handoff protocol is the grading center for this assignment |
+| Daily operating desk | `support/reference/deal-desk.md` | Shows what needs attention across active leads and deals |
+| Shared quality standard | `support/reference/agency-standard.md` | Gives every specialist the same pass/fail bar before work moves forward |
 | Research dashboard pattern | `02_property_research/` | Separates raw source gathering from client-ready explanation |
 | Approval workflow pattern | Human review gates | Prevents drafts, deadlines, and compliance-sensitive content from being treated as final |
 | Outreach pipeline pattern | Lead and communication flow | Creates a repeatable path from intake to follow-up |

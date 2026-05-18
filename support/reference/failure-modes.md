@@ -189,9 +189,19 @@ A system that doesn't acknowledge how it fails is not a real system. These are r
 
 **How it surfaces:** System asks for context that was already given.
 
-**Recovery:** Team member pastes the prior handoff packet or summary into the new chat. The system treats each chat as a fresh start.
+**Recovery:** Team member pastes the current lead/deal log or prior handoff packet into the new chat. The system treats each chat as a fresh start and updates the log before the work continues.
 
-**Architectural protection:** This is a known limitation of the no-software human-paste model. Documented in [`design-notes.md`](design-notes.md). A future v2 could persist packets as JSON files for re-loading, but v1 keeps them in-chat.
+**Architectural protection:** This is a known limitation of the no-software human-paste model. The richer lead/deal log template and Deal Desk brief give the team a pasteable state layer without turning the project into software. A future v2 could persist packets as JSON files for re-loading, but v1 keeps them in-chat.
+
+### Deal Desk shows stale or missing state
+
+**What happens:** A daily brief cannot tell what matters because a lead/deal log is missing a next owner, next check date, or latest handoff.
+
+**How it surfaces:** The Deal Desk puts the matter under `Stale Or Waiting` or `Cannot Move Until`.
+
+**Recovery:** Update the lead/deal log with current status, owner, open action, latest handoff metadata, and next check date before making decisions from the brief.
+
+**Architectural protection:** `support/reference/deal-desk.md` only uses current logs and handoff packets. It does not invent state from old chat memory.
 
 ### Hallucinated facts
 
@@ -223,6 +233,6 @@ The Agency is designed assuming:
 4. Sources will sometimes be unavailable.
 5. Voice will sometimes drift.
 
-For each, the architecture has a recovery path that doesn't require trusting the AI to be perfect. The handoff packet is the unit of accountability — when something goes wrong, the packet shows where.
+For each, the architecture has a recovery path that does not require trusting the AI to be perfect. The handoff packet is the unit of accountability, the lead/deal log is the state layer, and the Deal Desk is the daily operating view.
 
 That is the difference between a system designed for happy-path demos and a system designed to survive contact with reality.

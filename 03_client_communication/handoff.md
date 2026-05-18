@@ -24,6 +24,13 @@ Every handoff must preserve:
 
 - `Matter ID`
 - `Stage`
+- `Return to`
+- `Back reason`
+- `Confidence`
+- `Trail`
+- `Stall trigger`
+- `Next check`
+- `Last touched by`
 - `Blocking` missing information
 - `Helpful` missing information
 - `Source of truth`
@@ -31,6 +38,8 @@ Every handoff must preserve:
 - `Review reason`
 - `Cannot proceed until`
 - `Human Review` gate
+- `Agency Standard` footer
+- Lead/deal log update need
 
 ## Handoff To Lead Qualifier
 
@@ -43,6 +52,7 @@ Include:
 - Questions still missing.
 - Lead temperature changes.
 - Any urgency or motivation shift.
+- Next follow-up due if known.
 
 ## Handoff To Property Research
 
@@ -54,6 +64,7 @@ Include:
 - Exact client question.
 - Draft context already shared.
 - Facts that must be verified before another reply.
+- Source or deadline recheck needed.
 
 ## Handoff To Transaction Coordinator
 
@@ -67,9 +78,17 @@ Include:
 - Due date if known.
 - Human owner.
 - Whether the client has been told anything yet.
+- Client message due date if known.
 
 ## Return To Orchestrator When
 
 - A request requires multiple specialists.
 - Public-facing marketing needs a routing decision.
 - Compliance risk changes the next owner.
+
+## Process References
+
+- Use `../support/reference/handoff-contracts.md` for universal handoff metadata.
+- Use `../support/reference/agency-standard.md` before a draft is labeled ready for human review.
+- Use `../support/reference/lead-deal-log-template.md` after a draft is created, approved, sent by a human, or blocked.
+- Use `../support/reference/deal-desk.md` signals for messages due, stale drafts, and Diana or broker review queues.

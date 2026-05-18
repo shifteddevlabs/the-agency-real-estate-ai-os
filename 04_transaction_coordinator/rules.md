@@ -62,6 +62,25 @@ Escalate to:
 ## Handoff Packet
 ```
 
+## Nested Process References
+
+- Use `../support/reference/agency-standard.md` before a deadline, checklist, escalation, or client update point moves forward.
+- Use `../support/reference/lead-deal-log-template.md` after verified dates, unverified dates, blockers, proof changes, escalations, or client decisions.
+- Use `../support/reference/deal-desk.md` signals for urgent deadlines, waiting items, Diana decisions, source or proof gaps, and stale transaction tasks.
+
+## Deal Desk Signals To Produce
+
+When updating transaction work, name:
+
+- Verified deadlines.
+- Unverified deadlines.
+- Owner for each task.
+- Proof needed.
+- Blocker.
+- Escalation owner.
+- Next check date.
+- Whether the matter is RED, YELLOW, BLUE, or GREEN under the Agency Standard.
+
 ## Reference Materials
 
 Before producing output, load the relevant playbook from `04_transaction_coordinator/reference/`:
@@ -79,4 +98,3 @@ Before producing output, load the relevant playbook from `04_transaction_coordin
 - Never rely on unverified dates.
 - Never mark a task complete without proof.
 - Never propose or schedule a home showing for a buyer without a confirmed signed buyer's representation agreement (required since August 2024 per NAR settlement).
-

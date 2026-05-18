@@ -28,6 +28,8 @@ Sarah just forwarded me this email from the title company. They say there's been
 
 This scenario is unusual: it does NOT route to a single specialist for processing. The orchestrator outputs an action sequence directly. The protocol explicitly does not generate a "wire instruction summary" or any output that contains the new wire details.
 
+Scenario packets are abbreviated for readability. In live use, add the shared metadata from `../handoff-contracts.md`, check output against `../agency-standard.md`, and update the lead/deal log for Deal Desk visibility after the human escalation is resolved.
+
 ### Packet 1: 00 → escalation (Diana + title officer, by phone)
 
 ```md

@@ -1,6 +1,6 @@
 # Lead/Deal Log Template
 
-Use one lead/deal log per lead, client, property, or deal. This gives the AI enough memory to pick up a new chat without guessing.
+Use one lead/deal log per lead, client, property, or deal. This gives the AI enough memory to pick up a new chat, assemble a Deal Desk brief, and continue without guessing.
 
 Do not store private client data in a public repo. Keep real lead/deal logs in `lead-deal-logs/`, your private AI project, your CRM notes, Google Drive deal folder, or your transaction system.
 
@@ -30,8 +30,13 @@ If you cannot write files, give me the exact filename, the exact text to save, a
 Lead/deal ID: 20260518-alex-east-austin-buyer-intake
 Client or lead: Alex, referred by Mike
 Stage: New buyer lead, intake incomplete
+Status: Waiting on source
 Assigned human owner: Diana
+Next owner: Lead qualifier
 Last updated: 2026-05-18
+Last touched by: 00_orchestrator
+Next check date: 2026-05-19
+Risk slip: BLUE
 
 ## Current Status
 
@@ -53,6 +58,13 @@ Last updated: 2026-05-18
 - Alex's phone or email.
 - Whether Alex has signed a buyer representation agreement.
 - Whether Alex is already represented by another agent.
+
+## Open Actions
+
+| Action | Owner | Due or next check | Status | Blocker |
+|---|---|---|---|---|
+| Ask Mike for Alex's contact info | Diana | 2026-05-19 | Open | None |
+| Confirm buyer-representation status | Lead qualifier | Before showing language | Blocked | Alex not contacted |
 
 ## Source And Proof State
 
@@ -79,6 +91,10 @@ To: 01_lead_qualifier
 Matter ID: 20260518-alex-east-austin-buyer-intake
 Stage: New buyer lead, referral intake
 Next owner: Lead qualifier
+Return to: 00_orchestrator if contact info or representation status cannot be confirmed.
+Confidence: Medium, referral facts are clear but buyer details are incomplete.
+Trail: 00_orchestrator -> 01_lead_qualifier
+Stall trigger: no contact info by next check date.
 
 ## Client-Safe Drafts
 
@@ -92,6 +108,12 @@ Next owner: Lead qualifier
   - Decided by: System compliance rule, human to verify.
   - Source: Orchestrator buyer-rep flag.
   - Follow-up needed: Diana or assigned agent reviews reply before sending.
+
+## Deal Desk Notes
+
+- Appears under: Stale or Waiting if contact info is not received by next check date.
+- Diana decision queue: Not yet.
+- Client messages due: Reply to Mike after Diana review.
 ```
 
 ## Blank Template
@@ -102,8 +124,13 @@ Next owner: Lead qualifier
 Lead/deal ID:
 Client or lead:
 Stage:
+Status:
 Assigned human owner:
+Next owner:
 Last updated:
+Last touched by:
+Next check date:
+Risk slip:
 
 ## Current Status
 
@@ -116,6 +143,12 @@ Last updated:
 ## Blocking Missing Information
 
 -
+
+## Open Actions
+
+| Action | Owner | Due or next check | Status | Blocker |
+|---|---|---|---|---|
+|  |  |  |  |  |
 
 ## Source And Proof State
 
@@ -139,6 +172,16 @@ Last updated:
 
 Paste the most recent complete handoff note here. If it came from a specialist folder, it may use the formal packet label `Matter ID`.
 
+Include these handoff metadata fields when known:
+
+- Return to:
+- Back reason:
+- Confidence:
+- Trail:
+- Stall trigger:
+- Next check:
+- Last touched by:
+
 ## Client-Safe Drafts
 
 Paste only approved or draft-labeled client messages here. Never paste wire instructions.
@@ -150,6 +193,13 @@ Paste only approved or draft-labeled client messages here. Never paste wire inst
   - Decided by:
   - Source:
   - Follow-up needed:
+
+## Deal Desk Notes
+
+- Appears under:
+- Diana decision queue:
+- Client messages due:
+- Source or deadline rechecks:
 ```
 
 ## How To Use It
@@ -172,6 +222,8 @@ Continue from this state. Do not assume anything missing. Tell me the next safes
 - After a deadline is verified from an executed contract.
 - After Diana, broker, title, lender, attorney, or a client makes a decision.
 - Before starting a new chat on the same lead or deal.
+- Before creating a Deal Desk brief.
+- When the next-check date passes.
 
 ## Plain Text Or Database?
 

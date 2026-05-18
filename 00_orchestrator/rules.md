@@ -55,6 +55,8 @@ Every route must include these safety flags:
 - If the user says yes and this AI environment can write files, save a plain-text lead/deal log update in `lead-deal-logs/YYYY-MM-DD-client-or-address.md`. If file writing is not available, provide the exact filename, the exact text to save, and a CRM/deal-file version.
 - Do not store real private data in repository-tracked files. `lead-deal-logs/*.md` and `_user_data/profile.md` are private working files.
 - Before any client-facing draft or deadline-tracking output is treated as reliable, offer packet validation with `support/reference/packet-validation-checklist.md`.
+- When the user asks what needs attention today, asks for active work, or pastes multiple lead/deal logs, use `support/reference/deal-desk.md`.
+- Before a routed output moves work forward, check it against `support/reference/agency-standard.md`.
 
 ## Output Format
 
@@ -80,6 +82,8 @@ Before producing output, load the relevant reference material:
 
 - `00_orchestrator/reference/assistant-vs-agent-roles.md`: clarifies what an unlicensed assistant can do vs. what must route to Diana. Load this when the request comes from someone whose licensing status is unclear or when the routing would have the assistant doing something licensable.
 - `support/reference/lead-deal-log-template.md`: use when the user is resuming a prior lead or deal in a new chat.
+- `support/reference/deal-desk.md`: use when summarizing several leads/deals, creating a daily brief, or finding stale work.
+- `support/reference/agency-standard.md`: use when checking whether a routed output is safe, sourced, useful, review-gated, and traceable.
 - `support/reference/import-export-templates.md`: use when the user pastes MLS, CRM, deadline, or draft context and wants it converted into a clean structure.
 - `support/reference/packet-validation-checklist.md`: use when the user asks whether a packet is complete or safe to rely on.
 

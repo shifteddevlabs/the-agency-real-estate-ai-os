@@ -24,6 +24,13 @@ Client or lead:
 Matter:
 Urgency:
 Current status:
+Return to:
+Back reason:
+Confidence:
+Trail:
+Stall trigger:
+Next check:
+Last touched by:
 
 ## Known Facts
 - 
@@ -63,6 +70,12 @@ Current status:
 - Reviewer needed:
 - Review reason:
 - Cannot proceed until:
+
+## Agency Standard
+- Risk slip:
+- Human review:
+- Next owner:
+- Log update needed:
 ```
 
 ## Passing Rules
@@ -72,3 +85,6 @@ Current status:
 - Include enough context for the next folder to begin without rereading the whole conversation.
 - Include what not to do yet when the request has risk.
 - Return to the orchestrator only when ownership is unclear or the next step is blocked.
+- Use `../support/reference/handoff-contracts.md` for the full packet rules.
+- Use `../support/reference/agency-standard.md` before the routed output moves work forward.
+- Use `../support/reference/deal-desk.md` when routing from several active lead/deal logs into a daily brief.

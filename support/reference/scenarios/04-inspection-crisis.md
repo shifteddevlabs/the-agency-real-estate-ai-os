@@ -22,6 +22,8 @@ Sequence: `04_transaction_coordinator` (with inspection-renegotiation-playbook) 
 
 ## Handoff Chain
 
+Scenario packets are abbreviated for readability. In live use, add the shared metadata from `../handoff-contracts.md`, check output against `../agency-standard.md`, and update the lead/deal log for Deal Desk visibility.
+
 ### Packet 1: 00 → 04
 
 ```md

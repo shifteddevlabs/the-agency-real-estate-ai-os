@@ -25,6 +25,20 @@ A packet missing ANY of the eight is rejected at the receiver.
 
 In user-facing docs, `Matter ID` can be explained as the lead/deal ID. The formal field name stays `Matter ID` so all specialist handoffs use the same label.
 
+## Universal Metadata Fields
+
+These fields make packet movement easier to trace. They are required for full packets and recommended for minimum packets.
+
+| Field | Why |
+|---|---|
+| `Return to` | Names where the packet should go if the next owner cannot complete the work. |
+| `Back reason` | Explains why work is returning, such as missing source, wrong owner, compliance risk, stalled client, or deadline conflict. |
+| `Confidence` | Summarizes whether the packet is high, medium, or low confidence and why. |
+| `Trail` | Shows the path so far, for example `00_orchestrator -> 01_lead_qualifier -> 03_client_communication`. |
+| `Stall trigger` | Names the condition that should put the matter into the Deal Desk stale or waiting queue. |
+| `Next check` | Gives the next date or event when the matter should be reviewed. |
+| `Last touched by` | Names the specialist or human who most recently changed the packet. |
+
 ## Universal Required Sections
 
 In addition to the header fields, every packet must include four sections (some can be empty, but the headers must exist):
@@ -211,6 +225,13 @@ Client or lead:
 Matter:
 Urgency:
 Current status:
+Return to:
+Back reason:
+Confidence:
+Trail:
+Stall trigger:
+Next check:
+Last touched by:
 
 ## Known Facts
 -
@@ -245,6 +266,12 @@ Current status:
 - Reviewer needed:
 - Review reason:
 - Cannot proceed until:
+
+## Agency Standard
+- Risk slip:
+- Human review:
+- Next owner:
+- Log update needed:
 
 ## Human Review Needed Before
 - sending to a client

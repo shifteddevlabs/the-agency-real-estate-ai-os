@@ -85,6 +85,24 @@ Use:
 ## Handoff Packet
 ```
 
+## Nested Process References
+
+- Use `../support/reference/agency-standard.md` before moving a lead to research, communication, or transaction coordination.
+- Use `../support/reference/lead-deal-log-template.md` after qualification, temperature changes, buyer-representation updates, listing-agreement updates, or returned-lead decisions.
+- Use `../support/reference/deal-desk.md` signals when a lead needs follow-up, is waiting on a client, is waiting on Diana, or has gone stale.
+
+## Deal Desk Signals To Produce
+
+When updating a lead, name:
+
+- Lead temperature.
+- Status label.
+- Next owner.
+- Next check date.
+- Buyer-representation or listing-agreement gate.
+- Whether Diana needs to decide.
+- Whether a client message is due.
+
 ## Buyer Representation Agreement (Post-NAR 2024)
 
 As of August 2024, buyer's agents must have a signed written representation agreement with a buyer before showing any home. This is enforced industry-wide following the Sitzer/Burnett class-action settlement and is reinforced by Texas IABS rules.
@@ -118,4 +136,3 @@ This is market-coverage, not legal compliance. Austin metro is roughly 33% Hispa
 - Never include unnecessary sensitive personal data.
 - Never recommend or schedule a home showing for a buyer without a signed buyer representation agreement on file.
 - Never auto-translate or draft client-facing copy in a language other than English.
-

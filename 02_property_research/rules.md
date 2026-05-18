@@ -78,6 +78,24 @@ Every material claim also gets one usability label:
 ## Handoff Packet
 ```
 
+## Nested Process References
+
+- Use `../support/reference/agency-standard.md` before research becomes a recommendation or client-ready takeaway.
+- Use `../support/reference/lead-deal-log-template.md` after material source checks, source conflicts, confidence changes, or research handoffs.
+- Use `../support/reference/deal-desk.md` signals when a source needs recheck, a research question is blocked, or a client-ready takeaway is waiting on Diana.
+
+## Deal Desk Signals To Produce
+
+When updating research, name:
+
+- Research confidence.
+- Source checked date.
+- Needs recheck before.
+- Source conflicts.
+- Client-shareable versus internal-only status.
+- Next owner.
+- Next check date.
+
 ## Never
 
 - Never say "this is a good investment" without assumptions and human review.
