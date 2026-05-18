@@ -57,18 +57,18 @@ Once setup is done, here is what using the system looks like for ONE real lead, 
 - Review the drafts. Voice score is on each one (out of 20).
 - Send the Mike reply yourself (the system never sends).
 - Hand the Alex-side draft to Diana for review before she sends.
-- Ask: `Create or update the matter log for this lead. Give me exactly what to save and what to paste into my CRM notes.`
+- Ask: `Create or update the lead/deal log for this lead. Give me exactly what to save and what to paste into my CRM notes.`
 
 That is the loop. About 2 minutes from typing the lead to having two ready-to-review drafts. Type whatever you need next, property research, transaction update, mid-deal client message, and the orchestrator routes it the same way.
 
 ## Where Everything Goes
 
 - **Chat:** working space. Use it to ask, draft, route, and revise.
-- **Matter log:** AI memory snapshot. Save one markdown file per lead or deal in your private `_matters/` folder, or paste the same content into your private CRM/deal notes.
+- **Lead/deal log:** AI memory snapshot. Save one markdown file per lead or deal in your private `lead-deal-logs/` folder, or paste the same content into your private CRM/deal notes.
 - **CRM or transaction system:** official record. Lead status, signed agreements, deadlines, decisions, and client communication history live there.
 - **Email or text app:** final send location. The system drafts only, a human sends.
 
-The AI does not remember old chats unless you paste the matter log back in. Matter logs are markdown files, not a database. A database may make sense in a future software version, but v1 stays lightweight so a realtor can run it without setup.
+The AI does not remember old chats unless you paste the lead/deal log back in. Lead/deal logs are markdown files, not a database. A database may make sense in a future software version, but v1 stays lightweight so a realtor can run it without setup.
 
 ## Every-Day Use
 
@@ -132,7 +132,7 @@ Deal status:
 Return: verified deadline checklist, blockers, escalation owner, client-safe update draft request, and what not to say yet.
 ```
 
-For multi-chat work, keep a simple matter log using [`reference/matter-log-template.md`](reference/matter-log-template.md). Save private logs as `_matters/YYYY-MM-DD-client-or-address.md` or paste the same content into your CRM/deal file. For copied MLS, CRM, deadline, and draft inputs, use [`reference/import-export-templates.md`](reference/import-export-templates.md). Before relying on an output, ask the assistant to run the [`reference/packet-validation-checklist.md`](reference/packet-validation-checklist.md).
+For multi-chat work, keep a simple lead/deal log using [`reference/lead-deal-log-template.md`](reference/lead-deal-log-template.md). Save private logs as `lead-deal-logs/YYYY-MM-DD-client-or-address.md` or paste the same content into your CRM/deal file. For copied MLS, CRM, deadline, and draft inputs, use [`reference/import-export-templates.md`](reference/import-export-templates.md). Before relying on an output, ask the assistant to run the [`reference/packet-validation-checklist.md`](reference/packet-validation-checklist.md).
 
 ## Routing Diagram
 

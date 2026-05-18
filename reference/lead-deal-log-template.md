@@ -1,27 +1,27 @@
-# Matter Log Template
+# Lead/Deal Log Template
 
-Use one matter log per lead, client, property, or deal. This gives the AI enough memory to pick up a new chat without guessing.
+Use one lead/deal log per lead, client, property, or deal. This gives the AI enough memory to pick up a new chat without guessing.
 
-Do not store private client data in a public repo. Keep real matter logs in `_matters/`, your private AI project, your CRM notes, Google Drive deal folder, or your transaction system.
+Do not store private client data in a public repo. Keep real lead/deal logs in `lead-deal-logs/`, your private AI project, your CRM notes, Google Drive deal folder, or your transaction system.
 
 Recommended filename:
 
 ```text
-_matters/YYYY-MM-DD-client-or-address.md
+lead-deal-logs/YYYY-MM-DD-client-or-address.md
 ```
 
-If you do not use local files, ask the assistant for "CRM notes version" and paste the same matter-log content into the official lead or deal record.
+If you do not use local files, ask the assistant for "CRM notes version" and paste the same lead/deal log content into the official lead or deal record.
 
 ## Beginner Prompt
 
 ```text
-Create or update the matter log for this lead. Give me exactly what to save as `_matters/YYYY-MM-DD-client-or-address.md` and what to paste into my CRM notes.
+Create or update the lead/deal log for this lead. Give me exactly what to save as `lead-deal-logs/YYYY-MM-DD-client-or-address.md` and what to paste into my CRM notes.
 ```
 
 ## Filled Example
 
 ```md
-# Matter Log
+# Lead/Deal Log
 
 Matter ID: 20260518-alex-east-austin-buyer-intake
 Client or lead: Alex, referred by Mike
@@ -93,7 +93,7 @@ Next owner: Lead qualifier
 ## Blank Template
 
 ```md
-# Matter Log
+# Lead/Deal Log
 
 Matter ID:
 Client or lead:
@@ -155,8 +155,8 @@ At the start of a new chat, paste:
 ```text
 Use The Agency.
 
-Here is the current matter log:
-[paste matter log]
+Here is the current lead/deal log:
+[paste lead/deal log]
 
 Continue from this state. Do not assume anything missing. Tell me the next safest step.
 ```

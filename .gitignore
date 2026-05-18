@@ -1,5 +1,5 @@
 .DS_Store
 /tests/
 /_user_data/profile.md
-/_matters/*.md
-!/_matters/README.md
+/lead-deal-logs/*.md
+!/lead-deal-logs/README.md

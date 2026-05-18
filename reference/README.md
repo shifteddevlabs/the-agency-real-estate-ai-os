@@ -10,7 +10,7 @@ Optional support material for reviewers and future maintainers. The public submi
 | `failure-modes.md` | How the system breaks and recovers |
 | `faq.md` | Troubleshooting for real users |
 | `glossary.md` | Real estate terms for non-realtors |
-| `matter-log-template.md` | One-page context log for returning to a lead or deal in a new chat |
+| `lead-deal-log-template.md` | One-page context log for returning to a lead or deal in a new chat |
 | `import-export-templates.md` | Paste-ready shapes for MLS exports, CRM notes, deadlines, and drafts |
 | `packet-validation-checklist.md` | Lightweight pass/fail check before relying on a packet |
 | `research-sources.md` | Source policy and API notes |

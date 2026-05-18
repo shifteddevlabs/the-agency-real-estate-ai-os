@@ -104,7 +104,7 @@ That's fine. Re-paste the prior answer or summary into the chat: "Client is aski
 
 The system has no persistent memory across chats by default. Treat each chat as a clean slate and feed it the context it needs.
 
-For active leads or deals, keep a simple matter log using [`matter-log-template.md`](matter-log-template.md). Paste that log at the top of a new chat so the system can pick up without guessing.
+For active leads or deals, keep a simple lead/deal log using [`lead-deal-log-template.md`](lead-deal-log-template.md). Paste that log at the top of a new chat so the system can pick up without guessing.
 
 ## Edge Cases
 
