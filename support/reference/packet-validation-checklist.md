@@ -1,6 +1,6 @@
 # Packet Validation Checklist
 
-Run this before a specialist relies on a handoff packet, before a client-facing draft is reviewed, before a deal deadline is added to a live file, or before a lead/deal log is used in a Deal Desk brief.
+Run this before a specialist relies on a handoff packet, before a client-facing draft is reviewed, before a deal deadline is added to a live file, or before a lead/deal log is used in a Daily Operating Brief.
 
 Ask the assistant:
 
@@ -18,7 +18,7 @@ Review this packet for completeness, risk, and source state. Do not continue the
 [paste packet]
 ```
 
-The assistant should offer this check automatically before a client-facing draft is treated as send-ready, before a deadline is added to a live deal file, before a Deal Desk brief is trusted, or after a broken handoff.
+The assistant should offer this check automatically before a client-facing draft is treated as send-ready, before a deadline is added to a live deal file, before a Daily Operating Brief is trusted, or after a broken handoff.
 
 ## Pass Criteria
 
@@ -37,7 +37,7 @@ The assistant should offer this check automatically before a client-facing draft
 - Next owner is named.
 - Human review owner is named.
 - The packet says what cannot happen yet.
-- Agency Standard footer is filled with risk slip, human review, next owner, and log update need.
+- Agency Standard footer is filled with risk level, human review, next owner, and log update need.
 
 ## Automatic Fail Conditions
 
@@ -47,8 +47,8 @@ The assistant should offer this check automatically before a client-facing draft
 - A client-facing draft is labeled ready to send without Diana or assigned human review.
 - The packet contains protected-class assumptions or neighborhood steering language.
 - A transaction deadline is based on memory instead of the executed contract or verified deal file.
-- A Deal Desk item has no next owner or next check date.
-- The risk slip is missing on compliance-sensitive, source-sensitive, or deadline-sensitive work.
+- A Daily Operating Brief item has no next owner or next check date.
+- The risk level is missing on compliance-sensitive, source-sensitive, or deadline-sensitive work.
 
 ## Output Format
 
@@ -71,7 +71,7 @@ Pass or fail:
 
 ## Agency Standard
 
-- Risk slip:
+- Risk level:
 - Human review:
 - Next owner:
 - Log update needed:

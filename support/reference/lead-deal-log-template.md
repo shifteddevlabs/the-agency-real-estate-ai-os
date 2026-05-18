@@ -1,6 +1,6 @@
 # Lead/Deal Log Template
 
-Use one lead/deal log per lead, client, property, or deal. This gives the AI enough memory to pick up a new chat, assemble a Deal Desk brief, and continue without guessing.
+Use one lead/deal log per lead, client, property, or deal. This gives the AI enough memory to pick up a new chat, assemble a Daily Operating Brief, and continue without guessing.
 
 Do not store private client data in a public repo. Keep real lead/deal logs in `lead-deal-logs/`, your private AI project, your CRM notes, Google Drive deal folder, or your transaction system.
 
@@ -36,7 +36,7 @@ Next owner: Lead qualifier
 Last updated: 2026-05-18
 Last touched by: 00_orchestrator
 Next check date: 2026-05-19
-Risk slip: BLUE
+Risk level: BLUE
 
 ## Current Status
 
@@ -109,7 +109,7 @@ Stall trigger: no contact info by next check date.
   - Source: Orchestrator buyer-rep flag.
   - Follow-up needed: Diana or assigned agent reviews reply before sending.
 
-## Deal Desk Notes
+## Daily Operating Brief Notes
 
 - Appears under: Stale or Waiting if contact info is not received by next check date.
 - Diana decision queue: Not yet.
@@ -130,7 +130,7 @@ Next owner:
 Last updated:
 Last touched by:
 Next check date:
-Risk slip:
+Risk level:
 
 ## Current Status
 
@@ -194,7 +194,7 @@ Paste only approved or draft-labeled client messages here. Never paste wire inst
   - Source:
   - Follow-up needed:
 
-## Deal Desk Notes
+## Daily Operating Brief Notes
 
 - Appears under:
 - Diana decision queue:
@@ -222,7 +222,7 @@ Continue from this state. Do not assume anything missing. Tell me the next safes
 - After a deadline is verified from an executed contract.
 - After Diana, broker, title, lender, attorney, or a client makes a decision.
 - Before starting a new chat on the same lead or deal.
-- Before creating a Deal Desk brief.
+- Before creating a Daily Operating Brief.
 - When the next-check date passes.
 
 ## Plain Text Or Database?

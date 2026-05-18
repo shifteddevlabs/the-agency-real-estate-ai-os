@@ -82,9 +82,9 @@ Every material claim also gets one usability label:
 
 - Use `../support/reference/agency-standard.md` before research becomes a recommendation or client-ready takeaway.
 - Use `../support/reference/lead-deal-log-template.md` after material source checks, source conflicts, confidence changes, or research handoffs.
-- Use `../support/reference/deal-desk.md` signals when a source needs recheck, a research question is blocked, or a client-ready takeaway is waiting on Diana.
+- Use `../support/reference/daily-operating-brief.md` signals when a source needs recheck, a research question is blocked, or a client-ready takeaway is waiting on Diana.
 
-## Deal Desk Signals To Produce
+## Daily Operating Brief Signals To Produce
 
 When updating research, name:
 

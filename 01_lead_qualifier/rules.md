@@ -89,9 +89,9 @@ Use:
 
 - Use `../support/reference/agency-standard.md` before moving a lead to research, communication, or transaction coordination.
 - Use `../support/reference/lead-deal-log-template.md` after qualification, temperature changes, buyer-representation updates, listing-agreement updates, or returned-lead decisions.
-- Use `../support/reference/deal-desk.md` signals when a lead needs follow-up, is waiting on a client, is waiting on Diana, or has gone stale.
+- Use `../support/reference/daily-operating-brief.md` signals when a lead needs follow-up, is waiting on a client, is waiting on Diana, or has gone stale.
 
-## Deal Desk Signals To Produce
+## Daily Operating Brief Signals To Produce
 
 When updating a lead, name:
 

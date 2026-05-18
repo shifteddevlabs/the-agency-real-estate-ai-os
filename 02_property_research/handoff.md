@@ -82,4 +82,4 @@ Include:
 - Use `../support/reference/handoff-contracts.md` for universal handoff metadata.
 - Use `../support/reference/agency-standard.md` before research becomes a recommendation or client-ready takeaway.
 - Use `../support/reference/lead-deal-log-template.md` after material source checks, source conflicts, or research handoffs.
-- Use `../support/reference/deal-desk.md` signals for source rechecks, blocked research, and stale items.
+- Use `../support/reference/daily-operating-brief.md` signals for source rechecks, blocked research, and stale items.

@@ -98,4 +98,4 @@ Include:
 - Use `../support/reference/handoff-contracts.md` for universal handoff metadata.
 - Use `../support/reference/agency-standard.md` before moving the lead forward.
 - Use `../support/reference/lead-deal-log-template.md` after qualification or a returned lead decision.
-- Use `../support/reference/deal-desk.md` signals for follow-up, stale, waiting, and Diana-decision states.
+- Use `../support/reference/daily-operating-brief.md` signals for follow-up, stale, waiting, and Diana-decision states.

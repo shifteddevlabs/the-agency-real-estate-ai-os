@@ -32,4 +32,4 @@ For live use, apply the current shared workflow on top of every scenario packet:
 - Use `../handoff-contracts.md` for return path, confidence, trail, stall trigger, next check, and last-touched metadata.
 - Use `../agency-standard.md` before output moves forward.
 - Use `../lead-deal-log-template.md` to update state after each meaningful handoff.
-- Use `../deal-desk.md` when several scenario logs need a daily operating view.
+- Use `../daily-operating-brief.md` when several scenario logs need a daily operating view.

@@ -24,7 +24,7 @@ Sequence: `01_lead_qualifier` → `02_property_research` → `03_client_communic
 
 ## Handoff Chain
 
-Scenario packets are abbreviated for readability. In live use, add the shared metadata from `../handoff-contracts.md`, check output against `../agency-standard.md`, and update the lead/deal log for Deal Desk visibility.
+Scenario packets are abbreviated for readability. In live use, add the shared metadata from `../handoff-contracts.md`, check output against `../agency-standard.md`, and update the lead/deal log for Daily Operating Brief visibility.
 
 ### Packet 1: 00 → 01
 

@@ -75,7 +75,7 @@ This keeps the public structure clean while preserving the extra material that m
 
 ## Shared Process Docs, Specialist-Owned Signals
 
-Process-wide rules live once in `support/reference/`. The Agency Standard, Deal Desk, handoff contracts, packet validation, and lead/deal log template are shared because all four main specialists use them.
+Process-wide rules live once in `support/reference/`. The Agency Standard, Daily Operating Brief, handoff contracts, packet validation, and lead/deal log template are shared because all four main specialists use them.
 
 Specialist folders do not duplicate those processes. Instead, each specialist's `rules.md` names the signals it contributes:
 
@@ -174,7 +174,7 @@ The Agency recommissions proven patterns from prior agent and workflow work, rew
 | Router-first agent-system pattern | `00_orchestrator/` | Keeps messy requests from leaking into the wrong specialist |
 | Identity, rules, examples structure | Every specialist folder | Makes each folder teachable and portable |
 | Stage contracts and handoffs | Every `handoff.md` | The handoff protocol is the grading center for this assignment |
-| Daily operating desk | `support/reference/deal-desk.md` | Shows what needs attention across active leads and deals |
+| Daily operating brief | `support/reference/daily-operating-brief.md` | Shows what needs attention across active leads and deals |
 | Shared quality standard | `support/reference/agency-standard.md` | Gives every specialist the same pass/fail bar before work moves forward |
 | Research dashboard pattern | `02_property_research/` | Separates raw source gathering from client-ready explanation |
 | Approval workflow pattern | Human review gates | Prevents drafts, deadlines, and compliance-sensitive content from being treated as final |

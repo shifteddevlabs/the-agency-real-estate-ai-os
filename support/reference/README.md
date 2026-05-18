@@ -6,7 +6,7 @@ Optional deeper material. Start with the root [README.md](../../README.md) unles
 |---|---|
 | [submission-writeup.md](submission-writeup.md) | The short contest submission note |
 | [agency-standard.md](agency-standard.md) | Shared quality bar for all specialist output |
-| [deal-desk.md](deal-desk.md) | Daily operating brief from lead/deal logs |
+| [daily-operating-brief.md](daily-operating-brief.md) | Daily operating brief from lead/deal logs |
 | [design-notes.md](design-notes.md) | The reasoning behind the structure |
 | [handoff-contracts.md](handoff-contracts.md) | The formal handoff rules |
 | [failure-modes.md](failure-modes.md) | What can go wrong and how to recover |

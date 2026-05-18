@@ -4,7 +4,7 @@ A plain-English AI playbook for Diana's small Austin real estate team.
 
 The Agency is not software. It is a folder you add to Claude, ChatGPT, or Gemini so the AI knows how Diana's team wants to handle leads, property questions, client messages, and active deals.
 
-You type the messy real-world request. The Agency turns it into the next safe step, a draft, a traceable handoff note, a lead/deal log update, or a Deal Desk brief for the team.
+You type the messy real-world request. The Agency turns it into the next safe step, a draft, a traceable handoff note, a lead/deal log update, or a Daily Operating Brief for the team.
 
 ## Start Here
 
@@ -29,7 +29,7 @@ You do not need to open the folders during normal use. The folders are there so 
 If you are trying to see what is active across multiple leads or deals, use:
 
 ```text
-Use The Agency Deal Desk.
+Use The Agency Daily Operating Brief.
 
 Review these lead/deal logs and tell me what needs attention today:
 
@@ -118,7 +118,7 @@ The folder names are for the AI and for reviewers. Day to day, the team can just
 4. The specialist checks the work against The Agency Standard: safe, sourced, specific, useful, human-reviewed, voice-fit, and traceable.
 5. A human reviews before anything goes to a client or official deal file.
 6. If the work needs to continue later, the AI creates or updates the lead/deal log.
-7. When there are multiple active matters, the AI can assemble a Deal Desk brief from the current lead/deal logs.
+7. When there are multiple active matters, the AI can assemble a Daily Operating Brief from the current lead/deal logs.
 
 ## Handoff Notes
 
@@ -139,15 +139,15 @@ For the formal handoff rules, see [support/reference/handoff-contracts.md](suppo
 
 ## Keep Track Between Chats
 
-AI chats do not reliably remember old work. For any active lead or deal, keep a lead/deal log with the current status, owner, next check date, open actions, source state, latest handoff metadata, and Deal Desk notes.
+AI chats do not reliably remember old work. For any active lead or deal, keep a lead/deal log with the current status, owner, next check date, open actions, source state, latest handoff metadata, and Daily Operating Brief notes.
 
 Ask the AI to save it in your private `lead-deal-logs/` folder. If the AI app cannot write files, ask it for the exact filename and text, then paste that into your CRM notes or deal file.
 
 Use [support/reference/lead-deal-log-template.md](support/reference/lead-deal-log-template.md) when you need a clean starting point.
 
-When Diana wants the daily operating view, use [support/reference/deal-desk.md](support/reference/deal-desk.md). It turns current lead/deal logs into urgent items, Diana decisions, stale work, client messages due, source or deadline rechecks, and open actions by owner.
+When Diana wants the daily operating view, use [support/reference/daily-operating-brief.md](support/reference/daily-operating-brief.md). It turns current lead/deal logs into urgent items, Diana decisions, stale work, client messages due, source or deadline rechecks, and open actions by owner.
 
-Your CRM, transaction platform, or brokerage system is still the official record. The lead/deal log and Deal Desk are working aids for the AI and the team.
+Your CRM, transaction platform, or brokerage system is still the official record. The lead/deal log and Daily Operating Brief are working aids for the AI and the team.
 
 ## Safety Rules
 
@@ -185,7 +185,7 @@ What I built:
 - A root README that a new user can follow.
 - Clear handoff rules between folders.
 - Handoff metadata for return paths, confidence, trail, stall triggers, and next checks.
-- Lead/deal logs that support a daily Deal Desk brief.
+- Lead/deal logs that support a Daily Operating Brief.
 - The Agency Standard as a shared quality gate.
 - Voice setup for Diana's team.
 - Safety rules for client-facing work.
@@ -198,7 +198,7 @@ Next upgrades would be a short Loom walkthrough for each major LLM, Austin-speci
 For the deeper read:
 
 - [support/reference/agency-standard.md](support/reference/agency-standard.md), shared quality bar for specialist output.
-- [support/reference/deal-desk.md](support/reference/deal-desk.md), daily operating brief from lead/deal logs.
+- [support/reference/daily-operating-brief.md](support/reference/daily-operating-brief.md), daily operating brief from lead/deal logs.
 - [support/reference/design-notes.md](support/reference/design-notes.md), why the structure works.
 - [support/reference/handoff-contracts.md](support/reference/handoff-contracts.md), formal handoff rules.
 - [support/reference/failure-modes.md](support/reference/failure-modes.md), what can go wrong and how to recover.
@@ -239,10 +239,10 @@ Review this deal update. Tell me verified deadlines, missing proof, risk flags, 
 [paste deal update]
 ```
 
-### Create A Deal Desk Brief
+### Create A Daily Operating Brief
 
 ```text
-Use The Agency Deal Desk.
+Use The Agency Daily Operating Brief.
 
 Review these lead/deal logs and create today's briefing. Show urgent items, Diana decisions, stale or waiting work, client messages due, source or deadline rechecks, and open actions by owner:
 

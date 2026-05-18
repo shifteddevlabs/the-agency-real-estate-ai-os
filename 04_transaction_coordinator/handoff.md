@@ -83,4 +83,4 @@ Include:
 - Use `../support/reference/handoff-contracts.md` for universal handoff metadata.
 - Use `../support/reference/agency-standard.md` before a deadline, checklist, escalation, or client update point moves forward.
 - Use `../support/reference/lead-deal-log-template.md` after verified dates, blockers, proof changes, escalations, or client decisions.
-- Use `../support/reference/deal-desk.md` signals for urgent deadlines, waiting items, source gaps, and stale transaction tasks.
+- Use `../support/reference/daily-operating-brief.md` signals for urgent deadlines, waiting items, source gaps, and stale transaction tasks.

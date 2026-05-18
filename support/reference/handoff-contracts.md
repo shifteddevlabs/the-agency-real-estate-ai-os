@@ -35,7 +35,7 @@ These fields make packet movement easier to trace. They are required for full pa
 | `Back reason` | Explains why work is returning, such as missing source, wrong owner, compliance risk, stalled client, or deadline conflict. |
 | `Confidence` | Summarizes whether the packet is high, medium, or low confidence and why. |
 | `Trail` | Shows the path so far, for example `00_orchestrator -> 01_lead_qualifier -> 03_client_communication`. |
-| `Stall trigger` | Names the condition that should put the matter into the Deal Desk stale or waiting queue. |
+| `Stall trigger` | Names the condition that should put the matter into the Daily Operating Brief stale or waiting queue. |
 | `Next check` | Gives the next date or event when the matter should be reviewed. |
 | `Last touched by` | Names the specialist or human who most recently changed the packet. |
 
@@ -268,7 +268,7 @@ Last touched by:
 - Cannot proceed until:
 
 ## Agency Standard
-- Risk slip:
+- Risk level:
 - Human review:
 - Next owner:
 - Log update needed:

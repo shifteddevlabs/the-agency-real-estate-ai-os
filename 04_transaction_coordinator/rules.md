@@ -66,9 +66,9 @@ Escalate to:
 
 - Use `../support/reference/agency-standard.md` before a deadline, checklist, escalation, or client update point moves forward.
 - Use `../support/reference/lead-deal-log-template.md` after verified dates, unverified dates, blockers, proof changes, escalations, or client decisions.
-- Use `../support/reference/deal-desk.md` signals for urgent deadlines, waiting items, Diana decisions, source or proof gaps, and stale transaction tasks.
+- Use `../support/reference/daily-operating-brief.md` signals for urgent deadlines, waiting items, Diana decisions, source or proof gaps, and stale transaction tasks.
 
-## Deal Desk Signals To Produce
+## Daily Operating Brief Signals To Produce
 
 When updating transaction work, name:
 

@@ -103,9 +103,9 @@ This system drafts in English only. If the handoff packet flags a Spanish-speaki
 
 - Use `../support/reference/agency-standard.md` before a draft is labeled ready for human review.
 - Use `../support/reference/lead-deal-log-template.md` after a draft is created, revised, approved, sent by a human, or blocked.
-- Use `../support/reference/deal-desk.md` signals when a message is due, waiting on Diana, waiting on broker review, waiting on language review, or stale.
+- Use `../support/reference/daily-operating-brief.md` signals when a message is due, waiting on Diana, waiting on broker review, waiting on language review, or stale.
 
-## Deal Desk Signals To Produce
+## Daily Operating Brief Signals To Produce
 
 When updating communication work, name:
 

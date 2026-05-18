@@ -91,4 +91,4 @@ Include:
 - Use `../support/reference/handoff-contracts.md` for universal handoff metadata.
 - Use `../support/reference/agency-standard.md` before a draft is labeled ready for human review.
 - Use `../support/reference/lead-deal-log-template.md` after a draft is created, approved, sent by a human, or blocked.
-- Use `../support/reference/deal-desk.md` signals for messages due, stale drafts, and Diana or broker review queues.
+- Use `../support/reference/daily-operating-brief.md` signals for messages due, stale drafts, and Diana or broker review queues.

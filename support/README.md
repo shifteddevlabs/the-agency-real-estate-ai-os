@@ -7,5 +7,5 @@ Start with the root [README.md](../README.md). Use this folder only when you are
 | Folder | Use it for |
 |---|---|
 | [setup/](setup/) | Team setup and Diana voice setup |
-| [reference/](reference/) | Shared process docs, Agency Standard, Deal Desk, handoff rules, templates, FAQ, glossary, and mock scenarios |
+| [reference/](reference/) | Shared process docs, Agency Standard, Daily Operating Brief, handoff rules, templates, FAQ, glossary, and mock scenarios |
 | `tests/` | Internal agent-evaluation material, ignored from the public repo |

@@ -1,12 +1,12 @@
-# Deal Desk
+# Daily Operating Brief
 
-The Deal Desk is the daily operating view for The Agency. It turns private lead/deal logs into one short briefing so Diana can see what needs attention without opening every chat or folder.
+The Daily Operating Brief is the daily operating view for The Agency. It turns private lead/deal logs into one short briefing so Diana can see what needs attention without opening every chat or folder.
 
 This is not a CRM, transaction platform, or official deal file. It is a working summary built from `lead-deal-logs/` and the latest handoff packets.
 
 ## When To Use It
 
-Use the Deal Desk when:
+Use the Daily Operating Brief when:
 
 - Diana asks what needs attention today.
 - A new chat needs the current state across several active matters.
@@ -17,7 +17,7 @@ Use the Deal Desk when:
 ## Beginner Prompt
 
 ```text
-Use The Agency Deal Desk.
+Use The Agency Daily Operating Brief.
 
 Review these lead/deal logs and create today's briefing.
 
@@ -29,7 +29,7 @@ Show open actions, urgent risks, Diana decisions, stale items, client messages d
 If the AI can read files, ask:
 
 ```text
-Use The Agency Deal Desk.
+Use The Agency Daily Operating Brief.
 
 Read the private logs in `lead-deal-logs/` and create today's briefing.
 ```
@@ -48,7 +48,7 @@ Do not invent deal state from memory. If a log is missing or stale, mark it stal
 ## Daily Brief Format
 
 ```md
-# Deal Desk Brief
+# Daily Operating Brief
 
 Date:
 Prepared from:
@@ -101,9 +101,9 @@ Prepared from:
 
 ## Specialist Inputs
 
-Each main specialist contributes a different signal to the Deal Desk.
+Each main specialist contributes a different signal to the Daily Operating Brief.
 
-| Specialist | Adds to the desk |
+| Specialist | Adds to the brief |
 |---|---|
 | `01_lead_qualifier/` | Lead temperature, next follow-up, buyer or listing agreement status, poor-fit or represented-lead flags |
 | `02_property_research/` | Source recheck dates, confidence level, research questions, source conflicts, client-ready or internal-only labels |
@@ -148,7 +148,7 @@ Mark a matter stale when:
 
 ## What Not To Do
 
-- Do not treat the Deal Desk as the official record.
+- Do not treat the Daily Operating Brief as the official record.
 - Do not include wire instructions, account numbers, routing numbers, or private financial details.
 - Do not summarize real private client details into a public repo.
 - Do not mark a deadline verified unless the executed contract or official source is named.
@@ -159,7 +159,7 @@ Mark a matter stale when:
 After the brief is created, ask:
 
 ```text
-Create the log updates needed from this Deal Desk brief.
+Create the log updates needed from this Daily Operating Brief.
 
 For each affected lead/deal log, give me the exact section to update and the reason.
 ```

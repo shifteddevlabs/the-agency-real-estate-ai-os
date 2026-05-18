@@ -10,7 +10,7 @@ It is not another specialist. It is the shared checklist that keeps Diana's judg
 - A client-facing draft is produced.
 - Property or market research becomes a recommendation.
 - A deadline or transaction task is added to a log.
-- A matter appears in the Deal Desk.
+- A matter appears in the Daily Operating Brief.
 - A specialist refuses, returns, or escalates work.
 
 ## The Standard
@@ -128,7 +128,7 @@ For any output that moves work forward, include:
 
 ```md
 Agency Standard:
-- Risk slip:
+- Risk level:
 - Human review:
 - Next owner:
 - Log update needed:

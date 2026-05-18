@@ -22,7 +22,7 @@ Sequence: `01_lead_qualifier` (returning mode) → `03_client_communication`.
 
 ## Handoff Chain
 
-Scenario packets are abbreviated for readability. In live use, add the shared metadata from `../handoff-contracts.md`, check output against `../agency-standard.md`, and update the lead/deal log for Deal Desk visibility.
+Scenario packets are abbreviated for readability. In live use, add the shared metadata from `../handoff-contracts.md`, check output against `../agency-standard.md`, and update the lead/deal log for Daily Operating Brief visibility.
 
 ### Packet 1: 00 → 01
 

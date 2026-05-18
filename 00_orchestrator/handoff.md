@@ -72,7 +72,7 @@ Last touched by:
 - Cannot proceed until:
 
 ## Agency Standard
-- Risk slip:
+- Risk level:
 - Human review:
 - Next owner:
 - Log update needed:
@@ -87,4 +87,4 @@ Last touched by:
 - Return to the orchestrator only when ownership is unclear or the next step is blocked.
 - Use `../support/reference/handoff-contracts.md` for the full packet rules.
 - Use `../support/reference/agency-standard.md` before the routed output moves work forward.
-- Use `../support/reference/deal-desk.md` when routing from several active lead/deal logs into a daily brief.
+- Use `../support/reference/daily-operating-brief.md` when routing from several active lead/deal logs into a daily brief.
