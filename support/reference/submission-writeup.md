@@ -4,6 +4,8 @@
 
 The Agency is a folder-based AI playbook for a small Austin real estate team, shaped by my JJ AI Studio lens: useful AI should feel practical, calm, and usable by real people. I made the first path simple enough for a nontechnical realtor, while keeping the deeper structure inspectable for power users and reviewers. Plain Markdown keeps it portable across Claude, ChatGPT, Gemini, or another LLM. The `support/` folder keeps setup, reference, and tests available without crowding the required specialist folders. With another week, I'd record Loom walkthroughs for each major LLM and add Austin-specific source packs and transaction templates.
 
+The project can be found here: https://github.com/shifteddevlabs/the-agency-real-estate-ai-os.git
+
 ## What I Built
 
 A teachable, multi-folder real estate workflow that runs in ordinary AI project files, not custom software. I built it from the JJ AI Studio point of view: AI systems should feel useful before they feel impressive. The five required specialist folders stay visible at the root. `_user_data/` and `lead-deal-logs/` support real use. Setup, reference, and test material live in `support/` so they help without crowding the main path.
