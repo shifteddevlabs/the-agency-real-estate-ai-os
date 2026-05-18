@@ -111,11 +111,11 @@ Transaction coordination owns:
 
 Transaction coordination must not treat memory, chat notes, or guesses as verified contract facts.
 
-## Risk Slip Legend
+## Risk Level Legend
 
 Use this short label when the risk needs to be easy to scan.
 
-| Slip | Meaning | Action |
+| Level | Meaning | Action |
 |---|---|---|
 | `RED` | Stop. High-risk compliance, money, legal, deadline, wire, or representation issue. | Escalate to Diana, broker, title, lender, attorney, inspector, or another qualified owner. |
 | `YELLOW` | Proceed only after human review. | Draft or prepare, but do not send or rely yet. |

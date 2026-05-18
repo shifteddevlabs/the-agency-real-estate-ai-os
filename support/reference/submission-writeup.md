@@ -2,7 +2,7 @@
 
 ## 100-Word Version
 
-The Agency is a no-software AI operating desk for a small Austin real estate team. A nontechnical realtor can paste a messy real request and get the next safe step, while reviewers can inspect the specialist folders, handoff rules, Agency Standard, lead/deal logs, and Daily Operating Brief. Plain Markdown keeps it portable across Claude, ChatGPT, Gemini, or another LLM. The `support/` folder holds shared process docs without crowding the required folders. Every handoff stays traceable through Matter ID, confidence, trail, return path, stall trigger, and human review.
+The Agency is a no-software AI operating layer for a small Austin real estate team. A nontechnical realtor can paste a messy real request and get the next safe step, while reviewers can inspect the specialist folders, handoff rules, Agency Standard, lead/deal logs, and Daily Operating Brief. Plain Markdown keeps it portable across Claude, ChatGPT, Gemini, or another LLM. The `support/` folder holds shared process docs without crowding the required folders. Every handoff stays traceable through Matter ID, confidence, trail, return path, stall trigger, and human review.
 
 The project can be found here: https://github.com/shifteddevlabs/the-agency-real-estate-ai-os.git
 
